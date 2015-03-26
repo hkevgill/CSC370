@@ -1,9 +1,11 @@
 -- EXCEPTIONS FOR THE CONTRAINT ON DEPRTURES AND ARRIVALS
+
 CREATE TABLE EXCEPTIONS(
-	arrivalStatus VARCHAR(100) PRIMARY KEY
+	status VARCHAR(100) PRIMARY KEY
 );
 
 -- ENTITIES
+
 
 CREATE TABLE AIRLINES(
 	airlineCode INT PRIMARY KEY,
@@ -53,25 +55,31 @@ CREATE TABLE CLASS(
 
 CREATE TABLE FIRSTCLASS(
 	classID INT,
-	--Add data
+	dessert VARCHAR(100),
+	mealChoice VARCHAR(100),
+	partyFavors VARCHAR(100),
+	numberOfPillows INT,
+	winePreference VARCHAR(100),
 	CONSTRAINT fk_firstclass FOREIGN KEY(classID) REFERENCES CLASS(classID)
 );
 
 CREATE TABLE REGULARCLASS(
 	classID INT,
-	--Add data
+	mealChoice VARCHAR(100),
 	CONSTRAINT fk_regularclass FOREIGN KEY(classID) REFERENCES CLASS(classID)
 );
 
 CREATE TABLE SPECIALNEEDS(
 	classID INT,
-	--Add data
+	disability VARCHAR(300),
+	mealChoice VARCHAR(100),
 	CONSTRAINT fk_specialneeds FOREIGN KEY(classID) REFERENCES CLASS(classID)
 );
 
 CREATE TABLE INFANT(
 	classID INT,
-	--Add data
+	mealChoice VARCHAR(100),
+	toyChoice VARCHAR(100),
 	CONSTRAINT fk_infant FOREIGN KEY(classID) REFERENCES CLASS(classID)
 );
 
@@ -79,14 +87,14 @@ CREATE TABLE DEPARTURES(
 	departureID INT PRIMARY KEY,
 	gate VARCHAR(10),
 	departureDate DATE,
-	arrivalStatus VARCHAR(100) CONSTRAINT departure_check CHECK(arrivalStatus IN (SELECT * FROM EXCEPTIONS)) -- NEED CONSTRAINT
+	departureStatus VARCHAR(100) CONSTRAINT departure_check CHECK(departureStatus LIKE ('departed at [0-2][0-9]:[0-5][0-9]' OR 'delayed to [0-2][0-9]:[0-5][0-9]'))
 );
 
 CREATE TABLE ARRIVALS(
 	arrivalID INT PRIMARY KEY,
 	gate VARCHAR(10),
 	arrivalDate DATE,
-	arrivalStatus VARCHAR(100) CONSTRAINT arrival_check CHECK(arrivalStatus IN(SELECT * FROM EXCEPTIONS)) -- NEED CONSTRAINT
+	arrivalStatus VARCHAR(100) CONSTRAINT arrival_check CHECK(arrivalStatus LIKE ('arrived at [0-2][0-9]:[0-5][0-9]' OR 'delayed to [0-2][0-9]:[0-5][0-9]'))
 );
 
 
