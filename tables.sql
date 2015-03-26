@@ -11,7 +11,7 @@ CREATE TABLE FLIGHTS(
 	flightID INT PRIMARY KEY,
 	flightNumber INT,
 	source VARCHAR(100),
-	source VARCHAR(100)
+	destination VARCHAR(100)
 );
 
 CREATE TABLE INCOMING(
