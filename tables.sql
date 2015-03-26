@@ -18,12 +18,14 @@ CREATE TABLE INCOMING(
 	flightID INT,
 	plannedArrivalTime DATE,
 	CONSTRAINT fk_incoming FOREIGN KEY(flightID) REFERENCES AIRLINES(flightID)
+		ON DELETE CASCADE
 );
 
 CREATE TABLE OUTGOING(
 	flightID INT,
 	plannedDepartureTime DATE,
 	CONSTRAINT fk_outgoing FOREIGN KEY(flightID) REFERENCES AIRLINES(flightID)
+		ON DELETE CASCADE
 );
 
 CREATE TABLE PLANEMODELS(
@@ -55,6 +57,7 @@ CREATE TABLE FIRSTCLASS(
 	numberOfPillows INT,
 	winePreference VARCHAR(100),
 	CONSTRAINT fk_firstclass FOREIGN KEY(classID) REFERENCES CLASS(classID)
+		ON DELETE CASCADE
 );
 
 CREATE TABLE REGULARCLASS(
@@ -68,6 +71,7 @@ CREATE TABLE SPECIALNEEDS(
 	disability VARCHAR(300),
 	mealChoice VARCHAR(100),
 	CONSTRAINT fk_specialneeds FOREIGN KEY(classID) REFERENCES CLASS(classID)
+		ON DELETE CASCADE
 );
 
 CREATE TABLE INFANT(
@@ -75,6 +79,7 @@ CREATE TABLE INFANT(
 	mealChoice VARCHAR(100),
 	toyChoice VARCHAR(100),
 	CONSTRAINT fk_infant FOREIGN KEY(classID) REFERENCES CLASS(classID)
+		ON DELETE CASCADE
 );
 
 CREATE TABLE DEPARTURES(
@@ -82,6 +87,7 @@ CREATE TABLE DEPARTURES(
 	gate VARCHAR(10),
 	departureDate DATE,
 	departureStatus VARCHAR(100) CONSTRAINT departure_check CHECK(departureStatus LIKE ('departed at [0-2][0-9]:[0-5][0-9]' OR 'delayed to [0-2][0-9]:[0-5][0-9]'))
+		ON DELETE CASCADE
 );
 
 CREATE TABLE ARRIVALS(
@@ -89,6 +95,7 @@ CREATE TABLE ARRIVALS(
 	gate VARCHAR(10),
 	arrivalDate DATE,
 	arrivalStatus VARCHAR(100) CONSTRAINT arrival_check CHECK(arrivalStatus LIKE ('arrived at [0-2][0-9]:[0-5][0-9]' OR 'delayed to [0-2][0-9]:[0-5][0-9]'))
+		ON DELETE CASCADE
 );
 
 
@@ -98,38 +105,50 @@ CREATE TABLE OPERATES(
 	airlineCode INT,
 	flightID INT,
 	planeCode INT,
-	CONSTRAINT fk_operates_airlinecode FOREIGN KEY(airlineCode) REFERENCES AIRLINES(airlineCode),
-	CONSTRAINT fk_operates_flightid FOREIGN KEY(flightID) REFERENCES FLIGHTS(flightID),
+	CONSTRAINT fk_operates_airlinecode FOREIGN KEY(airlineCode) REFERENCES AIRLINES(airlineCode)
+		ON DELETE CASCADE,
+	CONSTRAINT fk_operates_flightid FOREIGN KEY(flightID) REFERENCES FLIGHTS(flightID)
+		ON DELETE CASCADE,
 	CONSTRAINT fk_operates_planeCode FOREIGN KEY(planeCode) REFERENCES PLANEMODELS(planeCode)
+		ON DELETE CASCADE
 );
 
 CREATE TABLE BOARDS(
 	flightID INT,
 	bagID INT,
 	passID INT,
-	CONSTRAINT fk_boards_flightid FOREIGN KEY(flightID) REFERENCES FLIGHTS(flightID),
-	CONSTRAINT fk_boards_bagid FOREIGN KEY(bagID) REFERENCES BAGGAGE(bagID),
+	CONSTRAINT fk_boards_flightid FOREIGN KEY(flightID) REFERENCES FLIGHTS(flightID)
+		ON DELETE CASCADE,
+	CONSTRAINT fk_boards_bagid FOREIGN KEY(bagID) REFERENCES BAGGAGE(bagID)
+		ON DELETE CASCADE,
 	CONSTRAINT fk_boards_passid FOREIGN KEY(passID) REFERENCES PASSENGERS(passID)
+		ON DELETE CASCADE
 );
 
 CREATE TABLE BELONGTO(
 	passID INT,
 	classID INT,
-	CONSTRAINT fk_belongto_passid FOREIGN KEY(passID) REFERENCES PASSENGERS(passID),
+	CONSTRAINT fk_belongto_passid FOREIGN KEY(passID) REFERENCES PASSENGERS(passID)
+		ON DELETE CASCADE,
 	CONSTRAINT fk_belongto_classid FOREIGN KEY(classID) REFERENCES CLASS(classID)
+		ON DELETE CASCADE
 );
 
 CREATE TABLE ASSOCIATEDDEPARTURE(
 	classID INT,
 	departureID INT,
-	CONSTRAINT fk_associateddeparture_classid FOREIGN KEY(classID) REFERENCES CLASS(classID),
+	CONSTRAINT fk_associateddeparture_classid FOREIGN KEY(classID) REFERENCES CLASS(classID)
+		ON DELETE CASCADE,
 	CONSTRAINT fk_associateddeparture_departureid FOREIGN KEY(departureID) REFERENCES DEPARTURES(departureID)
+		ON DELETE CASCADE
 );
 
 CREATE TABLE ASSOCIATEDARRIVAL(
 	classID INT,
 	arrivalID INT,
-	CONSTRAINT fk_associatedarrival_classid FOREIGN KEY(classID) REFERENCES CLASS(classID),
-	CONSTRAINT fk_associatedarrival_arrivalid FOREIGN KEY(arrivalID) REFERENCES ARRIVALS(arrivalID),
+	CONSTRAINT fk_associatedarrival_classid FOREIGN KEY(classID) REFERENCES CLASS(classID)
+		ON DELETE CASCADE,
+	CONSTRAINT fk_associatedarrival_arrivalid FOREIGN KEY(arrivalID) REFERENCES ARRIVALS(arrivalID)
+		ON DELETE CASCADE
 );
 
