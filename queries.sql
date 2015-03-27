@@ -6,3 +6,4 @@ WHERE plannedDepartureTime - plannedArrivalTime <= 3 AND plannedDepartureTime - 
 
 b)
 
+c)
