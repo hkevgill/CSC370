@@ -1,3 +1,8 @@
+4.
+
+
+
+5.
 a)
 
 SELECT INCOMING.flightID AS f1, OUTGOING.flightID AS f2
