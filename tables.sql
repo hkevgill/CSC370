@@ -150,7 +150,7 @@ CREATE TABLE ASSOCIATEDARRIVAL(
 	arrivalDate DATE,
 	CONSTRAINT fk_associatedarrival_passid FOREIGN KEY(passID) REFERENCES PASSENGERS(passID)
 		ON DELETE CASCADE,
-	CONSTRAINT fk_associatedarrival FOREIGN KEY(arrivalGate, arrivalDate) REFERENCES ARRIVALS(arrivalGate, departureDate)
+	CONSTRAINT fk_associatedarrival FOREIGN KEY(arrivalGate, arrivalDate) REFERENCES ARRIVALS(arrivalGate, arrivalDate)
 		ON DELETE CASCADE
 );
 
