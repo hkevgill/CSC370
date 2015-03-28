@@ -83,19 +83,19 @@ CREATE TABLE INFANT(
 );
 
 CREATE TABLE DEPARTURES(
-	departureID INT PRIMARY KEY,
 	gate VARCHAR(10),
 	departureDate DATE,
 	departureStatus VARCHAR(100) CONSTRAINT departure_check CHECK(departureStatus LIKE ('departed at [0-2][0-9]:[0-5][0-9]' OR 'delayed to [0-2][0-9]:[0-5][0-9]'))
-		ON DELETE CASCADE
+		ON DELETE CASCADE,
+	PRIMARY KEY(gate, departureDate)
 );
 
 CREATE TABLE ARRIVALS(
-	arrivalID INT PRIMARY KEY,
 	gate VARCHAR(10),
 	arrivalDate DATE,
 	arrivalStatus VARCHAR(100) CONSTRAINT arrival_check CHECK(arrivalStatus LIKE ('arrived at [0-2][0-9]:[0-5][0-9]' OR 'delayed to [0-2][0-9]:[0-5][0-9]'))
-		ON DELETE CASCADE
+		ON DELETE CASCADE,
+	PRIMARY KEY(gate, arrivalDate)
 );
 
 
@@ -136,19 +136,21 @@ CREATE TABLE BELONGTO(
 
 CREATE TABLE ASSOCIATEDDEPARTURE(
 	passID INT,
-	departureID INT,
+	gate VARCHAR(10),
+	departureDate DATE,
 	CONSTRAINT fk_associateddeparture_passid FOREIGN KEY(passID) REFERENCES PASSENGERS(passID)
 		ON DELETE CASCADE,
-	CONSTRAINT fk_associateddeparture_departureid FOREIGN KEY(departureID) REFERENCES DEPARTURES(departureID)
+	CONSTRAINT fk_associateddeparture FOREIGN KEY(gate, departureDate) REFERENCES DEPARTURES(gate, departureDate)
 		ON DELETE CASCADE
 );
 
 CREATE TABLE ASSOCIATEDARRIVAL(
 	passID INT,
-	arrivalID INT,
+	gate VARCHAR(10),
+	arrivalDate DATE,
 	CONSTRAINT fk_associatedarrival_passid FOREIGN KEY(passID) REFERENCES PASSENGERS(passID)
 		ON DELETE CASCADE,
-	CONSTRAINT fk_associatedarrival_arrivalid FOREIGN KEY(arrivalID) REFERENCES ARRIVALS(arrivalID)
+	CONSTRAINT fk_associatedarrival FOREIGN KEY(gate, arrivalDate) REFERENCES ARRIVALS(gate, departureDate)
 		ON DELETE CASCADE
 );
 
