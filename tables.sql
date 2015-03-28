@@ -18,7 +18,7 @@ CREATE TABLE INCOMING(
 	flightID INT,
 	plannedArrivalTime DATE,
 	plannedArrivalGate VARCHAR(10),
-	CONSTRAINT fk_incoming FOREIGN KEY(flightID) REFERENCES AIRLINES(flightID)
+	CONSTRAINT fk_incoming FOREIGN KEY(flightID) REFERENCES FLIGHTS(flightID)
 		ON DELETE CASCADE
 );
 
@@ -26,7 +26,7 @@ CREATE TABLE OUTGOING(
 	flightID INT,
 	plannedDepartureTime DATE,
 	plannedDepartureGate VARCHAR(10),
-	CONSTRAINT fk_outgoing FOREIGN KEY(flightID) REFERENCES AIRLINES(flightID)
+	CONSTRAINT fk_outgoing FOREIGN KEY(flightID) REFERENCES FLIGHTS(flightID)
 		ON DELETE CASCADE
 );
 
@@ -87,16 +87,14 @@ CREATE TABLE INFANT(
 CREATE TABLE DEPARTURES(
 	departureGate VARCHAR(10),
 	departureDate DATE,
-	departureStatus VARCHAR(100) CONSTRAINT departure_check CHECK(departureStatus LIKE ('departed at [0-2][0-9]:[0-5][0-9]' OR 'delayed to [0-2][0-9][0-5][0-9]'))
-		ON DELETE CASCADE,
+	departureStatus VARCHAR(100) CONSTRAINT departure_check CHECK(departureStatus LIKE 'departed at [0-2][0-9]:[0-5][0-9]' OR departureStatus LIKE 'delayed to [0-2][0-9][0-5][0-9]'),
 	PRIMARY KEY(departureGate, departureDate)
 );
 
 CREATE TABLE ARRIVALS(
 	arrivalGate VARCHAR(10),
 	arrivalDate DATE,
-	arrivalStatus VARCHAR(100) CONSTRAINT arrival_check CHECK(arrivalStatus LIKE ('arrived at [0-2][0-9]:[0-5][0-9]' OR 'delayed to [0-2][0-9][0-5][0-9]'))
-		ON DELETE CASCADE,
+	arrivalStatus VARCHAR(100) CONSTRAINT arrival_check CHECK(arrivalStatus LIKE 'arrived at [0-2][0-9]:[0-5][0-9]' OR arrivalStatus LIKE 'delayed to [0-2][0-9][0-5][0-9]'),
 	PRIMARY KEY(arrivalGate, arrivalDate)
 );
 
