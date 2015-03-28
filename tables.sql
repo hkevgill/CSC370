@@ -17,6 +17,7 @@ CREATE TABLE FLIGHTS(
 CREATE TABLE INCOMING(
 	flightID INT,
 	plannedArrivalTime DATE,
+	plannedArrivalGate VARCHAR(10),
 	CONSTRAINT fk_incoming FOREIGN KEY(flightID) REFERENCES AIRLINES(flightID)
 		ON DELETE CASCADE
 );
@@ -24,6 +25,7 @@ CREATE TABLE INCOMING(
 CREATE TABLE OUTGOING(
 	flightID INT,
 	plannedDepartureTime DATE,
+	plannedDepartureGate VARCHAR(10),
 	CONSTRAINT fk_outgoing FOREIGN KEY(flightID) REFERENCES AIRLINES(flightID)
 		ON DELETE CASCADE
 );
