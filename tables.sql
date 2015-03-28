@@ -135,18 +135,18 @@ CREATE TABLE BELONGTO(
 );
 
 CREATE TABLE ASSOCIATEDDEPARTURE(
-	classID INT,
+	passID INT,
 	departureID INT,
-	CONSTRAINT fk_associateddeparture_classid FOREIGN KEY(classID) REFERENCES CLASS(classID)
+	CONSTRAINT fk_associateddeparture_passid FOREIGN KEY(passID) REFERENCES PASSENGERS(passID)
 		ON DELETE CASCADE,
 	CONSTRAINT fk_associateddeparture_departureid FOREIGN KEY(departureID) REFERENCES DEPARTURES(departureID)
 		ON DELETE CASCADE
 );
 
 CREATE TABLE ASSOCIATEDARRIVAL(
-	classID INT,
+	passID INT,
 	arrivalID INT,
-	CONSTRAINT fk_associatedarrival_classid FOREIGN KEY(classID) REFERENCES CLASS(classID)
+	CONSTRAINT fk_associatedarrival_passid FOREIGN KEY(passID) REFERENCES PASSENGERS(passID)
 		ON DELETE CASCADE,
 	CONSTRAINT fk_associatedarrival_arrivalid FOREIGN KEY(arrivalID) REFERENCES ARRIVALS(arrivalID)
 		ON DELETE CASCADE
