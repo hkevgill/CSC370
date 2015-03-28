@@ -6,4 +6,8 @@ WHERE (plannedDepartureTime - plannedArrivalTime <= 0.125) AND (plannedDeparture
 
 b)
 
+SELECT passID
+FROM ASSOCIATEDDEPARTURE NATURAL JOIN ASSOCIATEDARRIVAL
+WHERE (SYSDATE > departureDate) AND (SYSDATE < arrivalDate)
+
 c)
