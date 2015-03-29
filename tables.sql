@@ -87,14 +87,16 @@ CREATE TABLE INFANT(
 CREATE TABLE DEPARTURES(
 	departureGate VARCHAR(10),
 	departureDate DATE,
-	departureStatus VARCHAR(100) CONSTRAINT departure_check CHECK(departureStatus LIKE 'departed at [0-2][0-9]:[0-5][0-9]' OR departureStatus LIKE 'delayed to [0-2][0-9][0-5][0-9]'),
+	departureStatus VARCHAR(100),
+	CONSTRAINT departure_check_1 CHECK(departureStatus LIKE 'departed at __:__' OR departureStatus LIKE 'delayed to __:__'),
 	PRIMARY KEY(departureGate, departureDate)
 );
 
 CREATE TABLE ARRIVALS(
 	arrivalGate VARCHAR(10),
 	arrivalDate DATE,
-	arrivalStatus VARCHAR(100) CONSTRAINT arrival_check CHECK(arrivalStatus LIKE 'arrived at [0-2][0-9]:[0-5][0-9]' OR arrivalStatus LIKE 'delayed to [0-2][0-9][0-5][0-9]'),
+	arrivalStatus VARCHAR(100),
+	 CONSTRAINT arrival_check CHECK(arrivalStatus LIKE 'arrived at __:__' OR arrivalStatus LIKE 'delayed to __:__'),
 	PRIMARY KEY(arrivalGate, arrivalDate)
 );
 
