@@ -1,5 +1,41 @@
 4.
+a)
 
+"SELECT flightID
+FROM(
+	SELECT *
+	FROM AIRLINES JOIN OPERATES ON AIRLINES.airlineCode = OPERATES.airlineCode 
+	WHERE AIRLINES.name = " + airlineName + ")"
+
+b)
+
+"SELECT flightID
+FROM FLIGHTS
+WHERE source = " + place + " OR destination = " + place + "
+"
+
+c) 
+
+"SELECT * 
+FROM DEPARTURES UNION ALL ARRIVALS
+WHERE (" + timeOfDay + " - departureDate) < (1/24) OR (arrivalDate - " + timeOfDay + ") < (1/24)"
+
+d)
+
+if(depOrArr == "DEPARTURE"){
+	"SELECT passID, name, dateOfBirth, placeOfBirth, citizenship
+	FROM ASSOCIATEDDEPARTURE JOIN PASSENGER USING passID
+	WHERE (" + gate + " = departureGate) AND (" + date + " = departureDate)"
+}
+if(depOrArr == "ARRIVAL"){
+	"SELECT passID, name, dateOfBirth, placeOfBirth, citizenship
+	FROM ASSOCIATEDARRIVAL JOIN PASSENGER USING passID
+	WHERE (" + gate + " = arrivalGate) AND (" + date + " = arrivalDate)"
+}
+	
+e)
+
+-- TODO --
 
 
 5.
