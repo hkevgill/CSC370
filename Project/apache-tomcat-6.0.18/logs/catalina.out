@@ -692,3 +692,749 @@ Mar 29, 2015 3:05:21 PM org.apache.jk.server.JkMain start
 INFO: Jk running ID=0 time=0/30  config=null
 Mar 29, 2015 3:05:21 PM org.apache.catalina.startup.Catalina start
 INFO: Server startup in 813 ms
+Mar 29, 2015 3:12:31 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 3:12:32 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 29, 2015 3:12:32 PM org.apache.catalina.session.StandardManager doUnload
+SEVERE: IOException while saving persisted sessions: java.io.FileNotFoundException: /Users/kevingill/Git/CSC370/Project/apache-tomcat-6.0.18/work/Catalina/localhost/_/SESSIONS.ser (No such file or directory)
+java.io.FileNotFoundException: /Users/kevingill/Git/CSC370/Project/apache-tomcat-6.0.18/work/Catalina/localhost/_/SESSIONS.ser (No such file or directory)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:101)
+	at org.apache.catalina.session.StandardManager.doUnload(StandardManager.java:489)
+	at org.apache.catalina.session.StandardManager.unload(StandardManager.java:463)
+	at org.apache.catalina.session.StandardManager.stop(StandardManager.java:667)
+	at org.apache.catalina.core.StandardContext.stop(StandardContext.java:4519)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:924)
+	at org.apache.catalina.startup.HostConfig.undeployApps(HostConfig.java:1191)
+	at org.apache.catalina.startup.HostConfig.stop(HostConfig.java:1162)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:313)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.core.ContainerBase.stop(ContainerBase.java:1086)
+	at org.apache.catalina.core.ContainerBase.stop(ContainerBase.java:1098)
+	at org.apache.catalina.core.StandardEngine.stop(StandardEngine.java:448)
+	at org.apache.catalina.core.StandardService.stop(StandardService.java:584)
+	at org.apache.catalina.core.StandardServer.stop(StandardServer.java:744)
+	at org.apache.catalina.startup.Catalina.stop(Catalina.java:628)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:603)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:288)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:413)
+
+Mar 29, 2015 3:12:32 PM org.apache.catalina.session.StandardManager stop
+SEVERE: Exception unloading sessions to persistent storage
+java.io.FileNotFoundException: /Users/kevingill/Git/CSC370/Project/apache-tomcat-6.0.18/work/Catalina/localhost/_/SESSIONS.ser (No such file or directory)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:101)
+	at org.apache.catalina.session.StandardManager.doUnload(StandardManager.java:489)
+	at org.apache.catalina.session.StandardManager.unload(StandardManager.java:463)
+	at org.apache.catalina.session.StandardManager.stop(StandardManager.java:667)
+	at org.apache.catalina.core.StandardContext.stop(StandardContext.java:4519)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:924)
+	at org.apache.catalina.startup.HostConfig.undeployApps(HostConfig.java:1191)
+	at org.apache.catalina.startup.HostConfig.stop(HostConfig.java:1162)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:313)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.core.ContainerBase.stop(ContainerBase.java:1086)
+	at org.apache.catalina.core.ContainerBase.stop(ContainerBase.java:1098)
+	at org.apache.catalina.core.StandardEngine.stop(StandardEngine.java:448)
+	at org.apache.catalina.core.StandardService.stop(StandardService.java:584)
+	at org.apache.catalina.core.StandardServer.stop(StandardServer.java:744)
+	at org.apache.catalina.startup.Catalina.stop(Catalina.java:628)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:603)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:288)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:413)
+
+Mar 29, 2015 3:12:32 PM org.apache.catalina.session.StandardManager doUnload
+SEVERE: IOException while saving persisted sessions: java.io.FileNotFoundException: /Users/kevingill/Git/CSC370/Project/apache-tomcat-6.0.18/work/Catalina/localhost/examples/SESSIONS.ser (No such file or directory)
+java.io.FileNotFoundException: /Users/kevingill/Git/CSC370/Project/apache-tomcat-6.0.18/work/Catalina/localhost/examples/SESSIONS.ser (No such file or directory)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:101)
+	at org.apache.catalina.session.StandardManager.doUnload(StandardManager.java:489)
+	at org.apache.catalina.session.StandardManager.unload(StandardManager.java:463)
+	at org.apache.catalina.session.StandardManager.stop(StandardManager.java:667)
+	at org.apache.catalina.core.StandardContext.stop(StandardContext.java:4519)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:924)
+	at org.apache.catalina.startup.HostConfig.undeployApps(HostConfig.java:1191)
+	at org.apache.catalina.startup.HostConfig.stop(HostConfig.java:1162)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:313)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.core.ContainerBase.stop(ContainerBase.java:1086)
+	at org.apache.catalina.core.ContainerBase.stop(ContainerBase.java:1098)
+	at org.apache.catalina.core.StandardEngine.stop(StandardEngine.java:448)
+	at org.apache.catalina.core.StandardService.stop(StandardService.java:584)
+	at org.apache.catalina.core.StandardServer.stop(StandardServer.java:744)
+	at org.apache.catalina.startup.Catalina.stop(Catalina.java:628)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:603)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:288)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:413)
+
+Mar 29, 2015 3:12:32 PM org.apache.catalina.session.StandardManager stop
+SEVERE: Exception unloading sessions to persistent storage
+java.io.FileNotFoundException: /Users/kevingill/Git/CSC370/Project/apache-tomcat-6.0.18/work/Catalina/localhost/examples/SESSIONS.ser (No such file or directory)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:101)
+	at org.apache.catalina.session.StandardManager.doUnload(StandardManager.java:489)
+	at org.apache.catalina.session.StandardManager.unload(StandardManager.java:463)
+	at org.apache.catalina.session.StandardManager.stop(StandardManager.java:667)
+	at org.apache.catalina.core.StandardContext.stop(StandardContext.java:4519)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:924)
+	at org.apache.catalina.startup.HostConfig.undeployApps(HostConfig.java:1191)
+	at org.apache.catalina.startup.HostConfig.stop(HostConfig.java:1162)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:313)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.core.ContainerBase.stop(ContainerBase.java:1086)
+	at org.apache.catalina.core.ContainerBase.stop(ContainerBase.java:1098)
+	at org.apache.catalina.core.StandardEngine.stop(StandardEngine.java:448)
+	at org.apache.catalina.core.StandardService.stop(StandardService.java:584)
+	at org.apache.catalina.core.StandardServer.stop(StandardServer.java:744)
+	at org.apache.catalina.startup.Catalina.stop(Catalina.java:628)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:603)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:288)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:413)
+
+Mar 29, 2015 3:12:32 PM org.apache.catalina.session.StandardManager doUnload
+SEVERE: IOException while saving persisted sessions: java.io.FileNotFoundException: /Users/kevingill/Git/CSC370/Project/apache-tomcat-6.0.18/work/Catalina/localhost/host-manager/SESSIONS.ser (No such file or directory)
+java.io.FileNotFoundException: /Users/kevingill/Git/CSC370/Project/apache-tomcat-6.0.18/work/Catalina/localhost/host-manager/SESSIONS.ser (No such file or directory)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:101)
+	at org.apache.catalina.session.StandardManager.doUnload(StandardManager.java:489)
+	at org.apache.catalina.session.StandardManager.unload(StandardManager.java:463)
+	at org.apache.catalina.session.StandardManager.stop(StandardManager.java:667)
+	at org.apache.catalina.core.StandardContext.stop(StandardContext.java:4519)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:924)
+	at org.apache.catalina.startup.HostConfig.undeployApps(HostConfig.java:1191)
+	at org.apache.catalina.startup.HostConfig.stop(HostConfig.java:1162)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:313)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.core.ContainerBase.stop(ContainerBase.java:1086)
+	at org.apache.catalina.core.ContainerBase.stop(ContainerBase.java:1098)
+	at org.apache.catalina.core.StandardEngine.stop(StandardEngine.java:448)
+	at org.apache.catalina.core.StandardService.stop(StandardService.java:584)
+	at org.apache.catalina.core.StandardServer.stop(StandardServer.java:744)
+	at org.apache.catalina.startup.Catalina.stop(Catalina.java:628)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:603)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:288)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:413)
+
+Mar 29, 2015 3:12:32 PM org.apache.catalina.session.StandardManager stop
+SEVERE: Exception unloading sessions to persistent storage
+java.io.FileNotFoundException: /Users/kevingill/Git/CSC370/Project/apache-tomcat-6.0.18/work/Catalina/localhost/host-manager/SESSIONS.ser (No such file or directory)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:101)
+	at org.apache.catalina.session.StandardManager.doUnload(StandardManager.java:489)
+	at org.apache.catalina.session.StandardManager.unload(StandardManager.java:463)
+	at org.apache.catalina.session.StandardManager.stop(StandardManager.java:667)
+	at org.apache.catalina.core.StandardContext.stop(StandardContext.java:4519)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:924)
+	at org.apache.catalina.startup.HostConfig.undeployApps(HostConfig.java:1191)
+	at org.apache.catalina.startup.HostConfig.stop(HostConfig.java:1162)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:313)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.core.ContainerBase.stop(ContainerBase.java:1086)
+	at org.apache.catalina.core.ContainerBase.stop(ContainerBase.java:1098)
+	at org.apache.catalina.core.StandardEngine.stop(StandardEngine.java:448)
+	at org.apache.catalina.core.StandardService.stop(StandardService.java:584)
+	at org.apache.catalina.core.StandardServer.stop(StandardServer.java:744)
+	at org.apache.catalina.startup.Catalina.stop(Catalina.java:628)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:603)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:288)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:413)
+
+Mar 29, 2015 3:12:32 PM org.apache.catalina.session.StandardManager doUnload
+SEVERE: IOException while saving persisted sessions: java.io.FileNotFoundException: /Users/kevingill/Git/CSC370/Project/apache-tomcat-6.0.18/work/Catalina/localhost/manager/SESSIONS.ser (No such file or directory)
+java.io.FileNotFoundException: /Users/kevingill/Git/CSC370/Project/apache-tomcat-6.0.18/work/Catalina/localhost/manager/SESSIONS.ser (No such file or directory)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:101)
+	at org.apache.catalina.session.StandardManager.doUnload(StandardManager.java:489)
+	at org.apache.catalina.session.StandardManager.unload(StandardManager.java:463)
+	at org.apache.catalina.session.StandardManager.stop(StandardManager.java:667)
+	at org.apache.catalina.core.StandardContext.stop(StandardContext.java:4519)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:924)
+	at org.apache.catalina.startup.HostConfig.undeployApps(HostConfig.java:1191)
+	at org.apache.catalina.startup.HostConfig.stop(HostConfig.java:1162)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:313)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.core.ContainerBase.stop(ContainerBase.java:1086)
+	at org.apache.catalina.core.ContainerBase.stop(ContainerBase.java:1098)
+	at org.apache.catalina.core.StandardEngine.stop(StandardEngine.java:448)
+	at org.apache.catalina.core.StandardService.stop(StandardService.java:584)
+	at org.apache.catalina.core.StandardServer.stop(StandardServer.java:744)
+	at org.apache.catalina.startup.Catalina.stop(Catalina.java:628)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:603)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:288)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:413)
+
+Mar 29, 2015 3:12:32 PM org.apache.catalina.session.StandardManager stop
+SEVERE: Exception unloading sessions to persistent storage
+java.io.FileNotFoundException: /Users/kevingill/Git/CSC370/Project/apache-tomcat-6.0.18/work/Catalina/localhost/manager/SESSIONS.ser (No such file or directory)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:101)
+	at org.apache.catalina.session.StandardManager.doUnload(StandardManager.java:489)
+	at org.apache.catalina.session.StandardManager.unload(StandardManager.java:463)
+	at org.apache.catalina.session.StandardManager.stop(StandardManager.java:667)
+	at org.apache.catalina.core.StandardContext.stop(StandardContext.java:4519)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:924)
+	at org.apache.catalina.startup.HostConfig.undeployApps(HostConfig.java:1191)
+	at org.apache.catalina.startup.HostConfig.stop(HostConfig.java:1162)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:313)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.core.ContainerBase.stop(ContainerBase.java:1086)
+	at org.apache.catalina.core.ContainerBase.stop(ContainerBase.java:1098)
+	at org.apache.catalina.core.StandardEngine.stop(StandardEngine.java:448)
+	at org.apache.catalina.core.StandardService.stop(StandardService.java:584)
+	at org.apache.catalina.core.StandardServer.stop(StandardServer.java:744)
+	at org.apache.catalina.startup.Catalina.stop(Catalina.java:628)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:603)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:288)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:413)
+
+Mar 29, 2015 3:12:32 PM org.apache.catalina.session.StandardManager doUnload
+SEVERE: IOException while saving persisted sessions: java.io.FileNotFoundException: /Users/kevingill/Git/CSC370/Project/apache-tomcat-6.0.18/work/Catalina/localhost/docs/SESSIONS.ser (No such file or directory)
+java.io.FileNotFoundException: /Users/kevingill/Git/CSC370/Project/apache-tomcat-6.0.18/work/Catalina/localhost/docs/SESSIONS.ser (No such file or directory)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:101)
+	at org.apache.catalina.session.StandardManager.doUnload(StandardManager.java:489)
+	at org.apache.catalina.session.StandardManager.unload(StandardManager.java:463)
+	at org.apache.catalina.session.StandardManager.stop(StandardManager.java:667)
+	at org.apache.catalina.core.StandardContext.stop(StandardContext.java:4519)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:924)
+	at org.apache.catalina.startup.HostConfig.undeployApps(HostConfig.java:1191)
+	at org.apache.catalina.startup.HostConfig.stop(HostConfig.java:1162)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:313)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.core.ContainerBase.stop(ContainerBase.java:1086)
+	at org.apache.catalina.core.ContainerBase.stop(ContainerBase.java:1098)
+	at org.apache.catalina.core.StandardEngine.stop(StandardEngine.java:448)
+	at org.apache.catalina.core.StandardService.stop(StandardService.java:584)
+	at org.apache.catalina.core.StandardServer.stop(StandardServer.java:744)
+	at org.apache.catalina.startup.Catalina.stop(Catalina.java:628)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:603)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:288)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:413)
+
+Mar 29, 2015 3:12:32 PM org.apache.catalina.session.StandardManager stop
+SEVERE: Exception unloading sessions to persistent storage
+java.io.FileNotFoundException: /Users/kevingill/Git/CSC370/Project/apache-tomcat-6.0.18/work/Catalina/localhost/docs/SESSIONS.ser (No such file or directory)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:101)
+	at org.apache.catalina.session.StandardManager.doUnload(StandardManager.java:489)
+	at org.apache.catalina.session.StandardManager.unload(StandardManager.java:463)
+	at org.apache.catalina.session.StandardManager.stop(StandardManager.java:667)
+	at org.apache.catalina.core.StandardContext.stop(StandardContext.java:4519)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:924)
+	at org.apache.catalina.startup.HostConfig.undeployApps(HostConfig.java:1191)
+	at org.apache.catalina.startup.HostConfig.stop(HostConfig.java:1162)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:313)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.core.ContainerBase.stop(ContainerBase.java:1086)
+	at org.apache.catalina.core.ContainerBase.stop(ContainerBase.java:1098)
+	at org.apache.catalina.core.StandardEngine.stop(StandardEngine.java:448)
+	at org.apache.catalina.core.StandardService.stop(StandardService.java:584)
+	at org.apache.catalina.core.StandardServer.stop(StandardServer.java:744)
+	at org.apache.catalina.startup.Catalina.stop(Catalina.java:628)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:603)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:288)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:413)
+
+Mar 29, 2015 3:12:32 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 3:29:36 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/kevingill/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Mar 29, 2015 3:29:37 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 3:29:37 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 526 ms
+Mar 29, 2015 3:29:37 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 29, 2015 3:29:37 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.18
+Mar 29, 2015 3:29:37 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 3:29:37 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 29, 2015 3:29:37 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/26  config=null
+Mar 29, 2015 3:29:37 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 805 ms
+Mar 29, 2015 3:31:19 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 3:31:20 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 29, 2015 3:31:20 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 3:31:36 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/kevingill/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Mar 29, 2015 3:31:36 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 3:31:36 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 470 ms
+Mar 29, 2015 3:31:36 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 29, 2015 3:31:36 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.18
+Mar 29, 2015 3:31:37 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 3:31:37 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 29, 2015 3:31:37 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/27  config=null
+Mar 29, 2015 3:31:37 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 852 ms
+Mar 29, 2015 3:34:33 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 3:34:34 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 29, 2015 3:34:35 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 3:39:09 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/kevingill/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Mar 29, 2015 3:39:09 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 3:39:09 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 527 ms
+Mar 29, 2015 3:39:09 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 29, 2015 3:39:09 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.18
+Mar 29, 2015 3:39:10 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 3:39:10 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 29, 2015 3:39:10 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/29  config=null
+Mar 29, 2015 3:39:10 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 923 ms
+Mar 29, 2015 3:49:20 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 3:49:21 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 29, 2015 3:49:21 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 3:49:27 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/kevingill/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Mar 29, 2015 3:49:27 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 3:49:27 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 461 ms
+Mar 29, 2015 3:49:27 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 29, 2015 3:49:27 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.18
+Mar 29, 2015 3:49:28 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 3:49:29 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 29, 2015 3:49:29 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/53  config=null
+Mar 29, 2015 3:49:29 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1339 ms
+Mar 29, 2015 3:53:24 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 3:53:25 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 29, 2015 3:53:25 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Mar 29, 2015 3:53:25 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/kevingill/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Mar 29, 2015 3:53:25 PM org.apache.coyote.http11.Http11Protocol init
+SEVERE: Error initializing endpoint
+java.net.BindException: Address already in use<null>:8081
+	at org.apache.tomcat.util.net.JIoEndpoint.init(JIoEndpoint.java:502)
+	at org.apache.coyote.http11.Http11Protocol.init(Http11Protocol.java:176)
+	at org.apache.catalina.connector.Connector.initialize(Connector.java:1058)
+	at org.apache.catalina.core.StandardService.initialize(StandardService.java:677)
+	at org.apache.catalina.core.StandardServer.initialize(StandardServer.java:795)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:530)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:550)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:260)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:412)
+
+Mar 29, 2015 3:53:25 PM org.apache.catalina.startup.Catalina load
+SEVERE: Catalina.start
+LifecycleException:  Protocol handler initialization failed: java.net.BindException: Address already in use<null>:8081
+	at org.apache.catalina.connector.Connector.initialize(Connector.java:1060)
+	at org.apache.catalina.core.StandardService.initialize(StandardService.java:677)
+	at org.apache.catalina.core.StandardServer.initialize(StandardServer.java:795)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:530)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:550)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:260)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:412)
+
+Mar 29, 2015 3:53:25 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 428 ms
+Mar 29, 2015 3:53:25 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 29, 2015 3:53:25 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.18
+Mar 29, 2015 3:53:26 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Mar 29, 2015 3:53:26 PM org.apache.coyote.http11.Http11Protocol start
+SEVERE: Error starting endpoint
+java.net.BindException: Address already in use<null>:8081
+	at org.apache.tomcat.util.net.JIoEndpoint.init(JIoEndpoint.java:502)
+	at org.apache.tomcat.util.net.JIoEndpoint.start(JIoEndpoint.java:519)
+	at org.apache.coyote.http11.Http11Protocol.start(Http11Protocol.java:203)
+	at org.apache.catalina.connector.Connector.start(Connector.java:1131)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:531)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:710)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:578)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:288)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:413)
+
+Mar 29, 2015 3:53:26 PM org.apache.catalina.startup.Catalina start
+SEVERE: Catalina.start: 
+LifecycleException:  service.getName(): "Catalina";  Protocol handler start failed: java.net.BindException: Address already in use<null>:8081
+	at org.apache.catalina.connector.Connector.start(Connector.java:1138)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:531)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:710)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:578)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:288)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:413)
+
+Mar 29, 2015 3:53:26 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 747 ms
+Mar 29, 2015 3:53:27 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Mar 29, 2015 3:53:27 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Mar 29, 2015 3:53:28 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Mar 29, 2015 3:53:29 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Mar 29, 2015 3:53:29 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 3:53:48 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 3:53:48 PM org.apache.catalina.connector.Connector pause
+SEVERE: Protocol handler pause failed
+java.lang.NullPointerException
+	at org.apache.jk.server.JkMain.pause(JkMain.java:679)
+	at org.apache.jk.server.JkCoyoteHandler.pause(JkCoyoteHandler.java:153)
+	at org.apache.catalina.connector.Connector.pause(Connector.java:1073)
+	at org.apache.catalina.core.StandardService.stop(StandardService.java:563)
+	at org.apache.catalina.core.StandardServer.stop(StandardServer.java:744)
+	at org.apache.catalina.startup.Catalina.stop(Catalina.java:628)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:603)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:288)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:413)
+
+Mar 29, 2015 3:53:49 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 29, 2015 3:53:49 PM org.apache.catalina.connector.MapperListener destroy
+WARNING: Error unregistering MBeanServerDelegate
+java.lang.NullPointerException
+	at org.apache.catalina.connector.MapperListener.destroy(MapperListener.java:165)
+	at org.apache.catalina.connector.Connector.stop(Connector.java:1179)
+	at org.apache.catalina.core.StandardService.stop(StandardService.java:593)
+	at org.apache.catalina.core.StandardServer.stop(StandardServer.java:744)
+	at org.apache.catalina.startup.Catalina.stop(Catalina.java:628)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:603)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:288)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:413)
+
+Mar 29, 2015 3:53:49 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 3:53:49 PM org.apache.catalina.connector.Connector stop
+SEVERE: Coyote connector has not been started
+Mar 29, 2015 3:54:10 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/kevingill/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Mar 29, 2015 3:54:10 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 3:54:10 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 432 ms
+Mar 29, 2015 3:54:11 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 29, 2015 3:54:11 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.18
+Mar 29, 2015 3:54:11 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 3:54:11 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 29, 2015 3:54:11 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/22  config=null
+Mar 29, 2015 3:54:11 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 846 ms
+Mar 29, 2015 3:59:46 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 3:59:47 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 29, 2015 3:59:47 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 2 instance(s) to be deallocated
+Mar 29, 2015 3:59:49 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 2 instance(s) to be deallocated
+Mar 29, 2015 3:59:50 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 2 instance(s) to be deallocated
+Mar 29, 2015 3:59:50 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 2 instance(s) to be deallocated
+Mar 29, 2015 3:59:51 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 2 instance(s) to be deallocated
+Mar 29, 2015 3:59:52 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 2 instance(s) to be deallocated
+Mar 29, 2015 3:59:52 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 3:59:53 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/kevingill/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Mar 29, 2015 3:59:53 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 3:59:53 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 718 ms
+Mar 29, 2015 3:59:53 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 29, 2015 3:59:53 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.18
+Mar 29, 2015 3:59:54 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 3:59:54 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 29, 2015 3:59:54 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/23  config=null
+Mar 29, 2015 3:59:54 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 896 ms
+Mar 29, 2015 4:03:06 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 4:03:07 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 29, 2015 4:03:07 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Mar 29, 2015 4:03:08 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Mar 29, 2015 4:03:09 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Mar 29, 2015 4:03:09 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Mar 29, 2015 4:03:10 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Mar 29, 2015 4:03:11 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Mar 29, 2015 4:03:11 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 4:03:13 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/kevingill/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Mar 29, 2015 4:03:13 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 4:03:13 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 439 ms
+Mar 29, 2015 4:03:13 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 29, 2015 4:03:13 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.18
+Mar 29, 2015 4:03:14 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 4:03:14 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 29, 2015 4:03:14 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/24  config=null
+Mar 29, 2015 4:03:14 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 887 ms
+Mar 29, 2015 4:03:52 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 4:03:53 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 29, 2015 4:03:53 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Mar 29, 2015 4:03:54 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Mar 29, 2015 4:03:55 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Mar 29, 2015 4:03:55 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Mar 29, 2015 4:03:56 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Mar 29, 2015 4:03:57 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Mar 29, 2015 4:03:57 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 4:07:20 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/kevingill/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Mar 29, 2015 4:07:20 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 4:07:20 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 529 ms
+Mar 29, 2015 4:07:20 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 29, 2015 4:07:20 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.18
+Mar 29, 2015 4:07:21 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 4:07:21 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 29, 2015 4:07:21 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/57  config=null
+Mar 29, 2015 4:07:21 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1023 ms
+Mar 29, 2015 4:15:17 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 4:15:18 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 29, 2015 4:15:19 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 4:15:23 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/kevingill/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Mar 29, 2015 4:15:23 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 4:15:23 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 425 ms
+Mar 29, 2015 4:15:23 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 29, 2015 4:15:23 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.18
+Mar 29, 2015 4:15:24 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 4:15:24 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 29, 2015 4:15:24 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/20  config=null
+Mar 29, 2015 4:15:24 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 822 ms
+Mar 29, 2015 4:22:13 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 4:22:14 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 29, 2015 4:22:14 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 4:22:21 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/kevingill/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Mar 29, 2015 4:22:21 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 4:22:21 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 442 ms
+Mar 29, 2015 4:22:21 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 29, 2015 4:22:21 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.18
+Mar 29, 2015 4:22:22 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 4:22:22 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 29, 2015 4:22:22 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=1/25  config=null
+Mar 29, 2015 4:22:22 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 881 ms
+Mar 29, 2015 4:30:16 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 4:30:17 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 29, 2015 4:30:18 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 4:30:37 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/kevingill/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Mar 29, 2015 4:30:37 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 4:30:37 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 475 ms
+Mar 29, 2015 4:30:37 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 29, 2015 4:30:37 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.18
+Mar 29, 2015 4:30:38 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 4:30:38 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 29, 2015 4:30:38 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/27  config=null
+Mar 29, 2015 4:30:38 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 954 ms
+Mar 29, 2015 4:34:10 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 4:34:11 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 29, 2015 4:34:12 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 4:34:17 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/kevingill/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Mar 29, 2015 4:34:17 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 4:34:17 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 404 ms
+Mar 29, 2015 4:34:17 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 29, 2015 4:34:17 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.18
+Mar 29, 2015 4:34:17 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 4:34:18 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 29, 2015 4:34:18 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/23  config=null
+Mar 29, 2015 4:34:18 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 764 ms
+Mar 29, 2015 4:35:52 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 4:35:53 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 29, 2015 4:35:53 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8081
