@@ -9,7 +9,7 @@ CREATE TABLE AIRLINES(
 
 CREATE TABLE FLIGHTS(
 	flightID INT PRIMARY KEY,
-	flightNumber INT,
+	flightNumber VARCHAR(10),
 	source VARCHAR(100),
 	destination VARCHAR(100)
 );
