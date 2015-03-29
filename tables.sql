@@ -31,7 +31,7 @@ CREATE TABLE OUTGOING(
 );
 
 CREATE TABLE PLANEMODELS(
-	planeCode INT PRIMARY KEY,
+	planeCode VARCHAR(50) PRIMARY KEY,
 	capacity INT
 );
 
@@ -104,7 +104,7 @@ CREATE TABLE ARRIVALS(
 CREATE TABLE OPERATES(
 	airlineCode VARCHAR(10),
 	flightID INT,
-	planeCode INT,
+	planeCode VARCHAR(50),
 	CONSTRAINT fk_operates_airlinecode FOREIGN KEY(airlineCode) REFERENCES AIRLINES(airlineCode)
 		ON DELETE CASCADE,
 	CONSTRAINT fk_operates_flightid FOREIGN KEY(flightID) REFERENCES FLIGHTS(flightID)
