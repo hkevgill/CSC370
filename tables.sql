@@ -2,7 +2,7 @@
 
 
 CREATE TABLE AIRLINES(
-	airlineCode INT PRIMARY KEY,
+	airlineCode VARCHAR(10) PRIMARY KEY,
 	name VARCHAR(40),
 	website VARCHAR(100)
 );
@@ -102,7 +102,7 @@ CREATE TABLE ARRIVALS(
 -- RELATIONSHIPS
 
 CREATE TABLE OPERATES(
-	airlineCode INT,
+	airlineCode VARCHAR(10),
 	flightID INT,
 	planeCode INT,
 	CONSTRAINT fk_operates_airlinecode FOREIGN KEY(airlineCode) REFERENCES AIRLINES(airlineCode)
