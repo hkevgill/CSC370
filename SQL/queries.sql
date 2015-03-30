@@ -45,13 +45,20 @@ WHERE passID = (Insert flightID here) AND flightID = (Insert flightID here)
 5.
 a)
 
-SELECT X.flightID AS f1, Y.flightID AS f2
-FROM (SELECT 
-		FROM (Incoming JOIN Flights USING(flightID)) X 
-				JOIN 
-			(Outgoing JOIN Flights USING(flightID)) Y
-				USING(X.dest = Y.source))
+CREATE VIEW INCOMINGFLIGHTS AS(
+  SELECT *
+  FROM Incoming JOIN Flights USING(flightID)
+)
+
+CREATE VIEW OUTGOINGFLIGHTS AS(
+  SELECT *
+  FROM Outgoing JOIN Flights USING(flightID)
+)
+
+SELECT INCOMINGFLIGHTS.FLIGHTID AS f1, OUTGOINGFLIGHTS.FLIGHTID AS f2
+FROM INCOMINGFLIGHTS JOIN OUTGOINGFLIGHTS ON(INCOMINGFLIGHTS.DEST = OUTGOINGFLIGHTS.SOURCE)
 WHERE (plannedDepartureTime - plannedArrivalTime <= 0.125) AND (plannedDepartureTime - plannedArrivalTime > 0)
+
 
 b)
 
