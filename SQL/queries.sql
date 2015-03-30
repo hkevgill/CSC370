@@ -45,11 +45,12 @@ WHERE passID = (Insert flightID here) AND flightID = (Insert flightID here)
 5.
 a)
 
-SELECT injoin.flightID AS incomingFlight, outjoin.flightID AS outgoingFlight
-FROM (Incoming JOIN Flight ON flightID) injoin 
-		JOIN 
-	(Outgoing JOIN Flight ON flightIF) outjoin
-		USING(injoin.dest = outjoin.source)
+SELECT X.flightID AS f1, Y.flightID AS f2
+FROM (SELECT 
+		FROM (Incoming JOIN Flights USING(flightID)) X 
+				JOIN 
+			(Outgoing JOIN Flights USING(flightID)) Y
+				USING(X.dest = Y.source))
 WHERE (plannedDepartureTime - plannedArrivalTime <= 0.125) AND (plannedDepartureTime - plannedArrivalTime > 0)
 
 b)
