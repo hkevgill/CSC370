@@ -36,20 +36,12 @@ SELECT passID, name, dateOfBirth, placeOfBirth, citizenship
 FROM ASSOCIATEDARRIVAL JOIN PASSENGER USING(passID)
 WHERE (" + gate + " = arrivalGate) AND (" + date + " = arrivalDate)"
 
--- if(depOrArr == "DEPARTURE"){
-	-- "SELECT passID, name, dateOfBirth, placeOfBirth, citizenship
-	-- FROM ASSOCIATEDDEPARTURE JOIN PASSENGER USING passID
-	-- WHERE (" + gate + " = departureGate) AND (" + date + " = departureDate)"
--- }
--- if(depOrArr == "ARRIVAL"){
-	-- "SELECT passID, name, dateOfBirth, placeOfBirth, citizenship
-	-- FROM ASSOCIATEDARRIVAL JOIN PASSENGER USING passID
-	-- WHERE (" + gate + " = arrivalGate) AND (" + date + " = arrivalDate)"
--- }
 	
 e)
 
--- TODO --
+"SELECT bagID " +
+"FROM BOARDS " +
+"WHERE passID = " + passID + " AND flightID = " + flightID
 
 
 5.
