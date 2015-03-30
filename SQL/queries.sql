@@ -35,7 +35,6 @@ SELECT passID, name, dateOfBirth, placeOfBirth, citizenship
 FROM ASSOCIATEDARRIVAL JOIN PASSENGER USING(passID)
 WHERE ((Insert gate here) = arrivalGate) AND ((Insert date here) = arrivalDate)
 
-	
 e)
 
 SELECT bagID
@@ -46,8 +45,11 @@ WHERE passID = (Insert flightID here) AND flightID = (Insert flightID here)
 5.
 a)
 
-SELECT INCOMING.flightID AS f1, OUTGOING.flightID AS f2
-FROM INCOMING, OUTGOING
+SELECT injoin.flightID AS incomingFlight, outjoin.flightID AS outgoingFlight
+FROM (Incoming JOIN Flight ON flightID) injoin 
+		JOIN 
+	(Outgoing JOIN Flight ON flightIF) outjoin
+		USING(injoin.dest = outjoin.source)
 WHERE (plannedDepartureTime - plannedArrivalTime <= 0.125) AND (plannedDepartureTime - plannedArrivalTime > 0)
 
 b)
