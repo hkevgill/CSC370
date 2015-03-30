@@ -1438,3 +1438,671 @@ Mar 29, 2015 4:35:53 PM org.apache.catalina.core.StandardService stop
 INFO: Stopping service Catalina
 Mar 29, 2015 4:35:53 PM org.apache.coyote.http11.Http11Protocol destroy
 INFO: Stopping Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 7:55:59 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/kevingill/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Mar 29, 2015 7:56:00 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 7:56:00 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 541 ms
+Mar 29, 2015 7:56:00 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 29, 2015 7:56:00 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.18
+Mar 29, 2015 7:56:00 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 7:56:00 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 29, 2015 7:56:00 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/29  config=null
+Mar 29, 2015 7:56:00 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 854 ms
+Mar 29, 2015 7:56:02 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 7:56:03 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 29, 2015 7:56:03 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 7:58:40 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/kevingill/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Mar 29, 2015 7:58:40 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 7:58:40 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 876 ms
+Mar 29, 2015 7:58:40 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 29, 2015 7:58:40 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.18
+Mar 29, 2015 7:58:41 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 7:58:41 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 29, 2015 7:58:41 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/24  config=null
+Mar 29, 2015 7:58:41 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1082 ms
+Mar 29, 2015 8:06:54 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 8:06:55 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 29, 2015 8:06:56 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 8:13:55 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/kevingill/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Mar 29, 2015 8:13:56 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 8:13:56 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 464 ms
+Mar 29, 2015 8:13:56 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 29, 2015 8:13:56 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.18
+Mar 29, 2015 8:13:56 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 8:13:56 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 29, 2015 8:13:56 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/48  config=null
+Mar 29, 2015 8:13:56 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 872 ms
+Mar 29, 2015 8:17:30 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 8:17:31 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 29, 2015 8:17:32 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 8:17:38 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/kevingill/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Mar 29, 2015 8:17:38 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 8:17:38 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 403 ms
+Mar 29, 2015 8:17:38 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 29, 2015 8:17:38 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.18
+Mar 29, 2015 8:17:39 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 8:17:39 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 29, 2015 8:17:39 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/29  config=null
+Mar 29, 2015 8:17:39 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 859 ms
+Mar 29, 2015 8:31:16 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 8:31:17 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 29, 2015 8:31:18 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 8:31:51 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/kevingill/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Mar 29, 2015 8:31:51 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 8:31:51 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 647 ms
+Mar 29, 2015 8:31:51 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 29, 2015 8:31:51 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.18
+Mar 29, 2015 8:31:52 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 8:31:52 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 29, 2015 8:31:52 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/29  config=null
+Mar 29, 2015 8:31:52 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1247 ms
+Mar 29, 2015 8:33:49 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 8:33:50 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 29, 2015 8:33:50 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 8:33:57 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/kevingill/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Mar 29, 2015 8:33:58 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 8:33:58 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 407 ms
+Mar 29, 2015 8:33:58 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 29, 2015 8:33:58 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.18
+Mar 29, 2015 8:33:58 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 8:33:58 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 29, 2015 8:33:58 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/23  config=null
+Mar 29, 2015 8:33:58 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 819 ms
+Mar 29, 2015 8:47:06 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 8:47:07 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 29, 2015 8:47:07 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 8:51:26 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/kevingill/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Mar 29, 2015 8:51:27 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 8:51:27 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 536 ms
+Mar 29, 2015 8:51:27 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 29, 2015 8:51:27 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.18
+Mar 29, 2015 8:51:27 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 8:51:27 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 29, 2015 8:51:27 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/23  config=null
+Mar 29, 2015 8:51:27 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 813 ms
+Mar 29, 2015 9:29:39 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:29:40 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 29, 2015 9:29:40 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:29:50 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/kevingill/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Mar 29, 2015 9:29:50 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:29:50 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 642 ms
+Mar 29, 2015 9:29:50 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 29, 2015 9:29:50 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.18
+Mar 29, 2015 9:29:51 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:29:51 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 29, 2015 9:29:51 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/38  config=null
+Mar 29, 2015 9:29:51 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1362 ms
+Mar 29, 2015 9:33:20 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:33:21 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading this Context has started
+Mar 29, 2015 9:33:21 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 29, 2015 9:33:22 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:33:22 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/kevingill/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Mar 29, 2015 9:33:22 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:33:22 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 805 ms
+Mar 29, 2015 9:33:22 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 29, 2015 9:33:22 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.18
+Mar 29, 2015 9:33:23 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:33:23 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 29, 2015 9:33:23 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/43  config=null
+Mar 29, 2015 9:33:23 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1115 ms
+Mar 29, 2015 9:34:54 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:34:55 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 29, 2015 9:34:56 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:35:02 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/kevingill/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Mar 29, 2015 9:35:02 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:35:02 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 518 ms
+Mar 29, 2015 9:35:02 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 29, 2015 9:35:02 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.18
+Mar 29, 2015 9:35:03 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:35:03 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 29, 2015 9:35:03 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/28  config=null
+Mar 29, 2015 9:35:03 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 985 ms
+Mar 29, 2015 9:36:22 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:36:23 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 29, 2015 9:36:23 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:36:31 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/kevingill/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Mar 29, 2015 9:36:31 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:36:31 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 435 ms
+Mar 29, 2015 9:36:31 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 29, 2015 9:36:31 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.18
+Mar 29, 2015 9:36:32 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:36:32 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 29, 2015 9:36:32 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/25  config=null
+Mar 29, 2015 9:36:32 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 952 ms
+Mar 29, 2015 9:37:13 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:37:14 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 29, 2015 9:37:14 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:37:20 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/kevingill/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Mar 29, 2015 9:37:20 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:37:20 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 432 ms
+Mar 29, 2015 9:37:20 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 29, 2015 9:37:20 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.18
+Mar 29, 2015 9:37:21 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:37:21 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 29, 2015 9:37:21 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/26  config=null
+Mar 29, 2015 9:37:21 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1025 ms
+Mar 29, 2015 9:38:17 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:38:18 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 29, 2015 9:38:18 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:38:26 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/kevingill/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Mar 29, 2015 9:38:26 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:38:26 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 500 ms
+Mar 29, 2015 9:38:26 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 29, 2015 9:38:26 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.18
+Mar 29, 2015 9:38:27 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:38:27 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 29, 2015 9:38:27 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/30  config=null
+Mar 29, 2015 9:38:27 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 983 ms
+Mar 29, 2015 9:40:00 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:40:01 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 29, 2015 9:40:02 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:40:06 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/kevingill/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Mar 29, 2015 9:40:07 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:40:07 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 462 ms
+Mar 29, 2015 9:40:07 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 29, 2015 9:40:07 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.18
+Mar 29, 2015 9:40:07 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:40:08 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 29, 2015 9:40:08 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/22  config=null
+Mar 29, 2015 9:40:08 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 989 ms
+Mar 29, 2015 9:42:05 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:42:06 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 29, 2015 9:42:06 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:42:15 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/kevingill/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Mar 29, 2015 9:42:15 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:42:15 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 428 ms
+Mar 29, 2015 9:42:15 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 29, 2015 9:42:15 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.18
+Mar 29, 2015 9:42:16 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:42:16 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 29, 2015 9:42:16 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/26  config=null
+Mar 29, 2015 9:42:16 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 982 ms
+Mar 29, 2015 9:45:37 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:45:38 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 29, 2015 9:45:38 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:45:45 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/kevingill/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Mar 29, 2015 9:45:45 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:45:45 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 738 ms
+Mar 29, 2015 9:45:45 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 29, 2015 9:45:45 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.18
+Mar 29, 2015 9:45:46 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:45:46 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 29, 2015 9:45:46 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/38  config=null
+Mar 29, 2015 9:45:46 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1227 ms
+Mar 29, 2015 9:46:34 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:46:35 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 29, 2015 9:46:35 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:46:40 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/kevingill/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Mar 29, 2015 9:46:40 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:46:40 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 633 ms
+Mar 29, 2015 9:46:41 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 29, 2015 9:46:41 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.18
+Mar 29, 2015 9:46:42 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:46:42 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 29, 2015 9:46:42 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/23  config=null
+Mar 29, 2015 9:46:42 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1195 ms
+Mar 29, 2015 9:47:52 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:47:53 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 29, 2015 9:47:54 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:47:59 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/kevingill/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Mar 29, 2015 9:47:59 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:47:59 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 656 ms
+Mar 29, 2015 9:47:59 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 29, 2015 9:47:59 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.18
+Mar 29, 2015 9:48:00 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:48:00 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 29, 2015 9:48:00 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/25  config=null
+Mar 29, 2015 9:48:00 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1264 ms
+Mar 29, 2015 9:49:56 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:49:57 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 29, 2015 9:49:58 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:50:05 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/kevingill/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Mar 29, 2015 9:50:05 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:50:05 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 629 ms
+Mar 29, 2015 9:50:05 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 29, 2015 9:50:05 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.18
+Mar 29, 2015 9:50:06 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:50:06 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 29, 2015 9:50:06 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/52  config=null
+Mar 29, 2015 9:50:06 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1459 ms
+Mar 29, 2015 9:50:33 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:50:34 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 29, 2015 9:50:34 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:50:40 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/kevingill/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Mar 29, 2015 9:50:40 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:50:40 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 746 ms
+Mar 29, 2015 9:50:40 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 29, 2015 9:50:40 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.18
+Mar 29, 2015 9:50:41 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:50:42 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 29, 2015 9:50:42 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/27  config=null
+Mar 29, 2015 9:50:42 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1186 ms
+Mar 29, 2015 9:51:32 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:51:33 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 29, 2015 9:51:34 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:51:43 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/kevingill/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Mar 29, 2015 9:51:43 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:51:43 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 613 ms
+Mar 29, 2015 9:51:43 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 29, 2015 9:51:43 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.18
+Mar 29, 2015 9:51:44 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:51:44 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 29, 2015 9:51:44 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/30  config=null
+Mar 29, 2015 9:51:44 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1177 ms
+Mar 29, 2015 9:52:16 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:52:17 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 29, 2015 9:52:17 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:52:23 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/kevingill/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Mar 29, 2015 9:52:23 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:52:23 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 650 ms
+Mar 29, 2015 9:52:23 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 29, 2015 9:52:23 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.18
+Mar 29, 2015 9:52:25 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:52:25 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 29, 2015 9:52:25 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/52  config=null
+Mar 29, 2015 9:52:25 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1334 ms
+Mar 29, 2015 9:55:22 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:55:23 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 29, 2015 9:55:23 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:55:31 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/kevingill/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Mar 29, 2015 9:55:31 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:55:31 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 453 ms
+Mar 29, 2015 9:55:31 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 29, 2015 9:55:31 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.18
+Mar 29, 2015 9:55:32 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:55:32 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 29, 2015 9:55:32 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=1/27  config=null
+Mar 29, 2015 9:55:32 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 890 ms
+Mar 29, 2015 9:55:59 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:56:01 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 29, 2015 9:56:01 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:56:08 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/kevingill/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Mar 29, 2015 9:56:08 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:56:08 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 457 ms
+Mar 29, 2015 9:56:08 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 29, 2015 9:56:08 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.18
+Mar 29, 2015 9:56:09 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:56:09 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 29, 2015 9:56:09 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/33  config=null
+Mar 29, 2015 9:56:09 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 859 ms
+Mar 29, 2015 9:57:47 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:57:48 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 29, 2015 9:57:48 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:57:55 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/kevingill/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Mar 29, 2015 9:57:55 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:57:55 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 423 ms
+Mar 29, 2015 9:57:55 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 29, 2015 9:57:55 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.18
+Mar 29, 2015 9:57:56 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:57:56 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 29, 2015 9:57:56 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/22  config=null
+Mar 29, 2015 9:57:56 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 826 ms
+Mar 29, 2015 9:58:35 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:58:36 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 29, 2015 9:58:36 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:58:41 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/kevingill/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Mar 29, 2015 9:58:41 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:58:41 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 424 ms
+Mar 29, 2015 9:58:41 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 29, 2015 9:58:41 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.18
+Mar 29, 2015 9:58:42 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:58:42 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 29, 2015 9:58:42 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/22  config=null
+Mar 29, 2015 9:58:42 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 970 ms
+Mar 29, 2015 9:59:49 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:59:50 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 29, 2015 9:59:50 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:59:56 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/kevingill/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Mar 29, 2015 9:59:56 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:59:56 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 420 ms
+Mar 29, 2015 9:59:56 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 29, 2015 9:59:56 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.18
+Mar 29, 2015 9:59:57 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 9:59:57 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 29, 2015 9:59:57 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/33  config=null
+Mar 29, 2015 9:59:57 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 977 ms
+Mar 29, 2015 10:01:46 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 10:01:47 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 29, 2015 10:01:48 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 10:01:53 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/kevingill/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+Mar 29, 2015 10:01:54 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 10:01:54 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 422 ms
+Mar 29, 2015 10:01:54 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 29, 2015 10:01:54 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.18
+Mar 29, 2015 10:01:54 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8081
+Mar 29, 2015 10:01:54 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Mar 29, 2015 10:01:54 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/22  config=null
+Mar 29, 2015 10:01:54 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 944 ms

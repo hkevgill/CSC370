@@ -20,6 +20,16 @@ c)
 FROM DEPARTURES UNION ALL ARRIVALS
 WHERE (" + timeOfDay + " - departureDate) < (1/24) OR (arrivalDate - " + timeOfDay + ") < (1/24)"
 
+SELECT *
+FROM
+  ((SELECT departureGate, departureDate, departureStatus
+  FROM DEPARTURES
+  WHERE (SYSDATE - departureDate) < (1/24) AND (SYSDATE - departureDate) > (-1/24))
+    NATURAL FULL OUTER JOIN
+  (SELECT arrivalGate, arrivalDate, arrivalStatus
+  FROM ARRIVALS
+  WHERE ((arrivalDate - SYSDATE) < (1/24) AND (arrivalDate - SYSDATE) > (-1/24))))
+
 d)
 
 if(depOrArr == "DEPARTURE"){
