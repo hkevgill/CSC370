@@ -1,47 +1,46 @@
 4.
 a)
 
-"SELECT flightID
+SELECT flightID
 FROM(
 	SELECT *
 	FROM AIRLINES JOIN OPERATES ON AIRLINES.airlineCode = OPERATES.airlineCode 
-	WHERE AIRLINES.name = " + airlineName + ")"
+	WHERE AIRLINES.name = (Insert airline here))
 
 b)
 
-"SELECT flightID
+SELECT flightID
 FROM FLIGHTS
-WHERE source = " + location + " OR destination = " + location + "
-"
+WHERE source = (Insert location here) OR destination = (Insert location here)
 
 c) 
 
-"SELECT * " +
-"FROM " +
-  "((SELECT departureGate, departureDate, departureStatus AS Status " +
-  "FROM DEPARTURES " +
-  "WHERE (TO_DATE('" + timeOfDay + "', 'yyyy-mm-dd hh24:mi:ss') - departureDate) < (1/24) AND (TO_DATE('" + timeOfDay + "', 'yyyy-mm-dd hh24:mi:ss') - departureDate) > (-1/24)) " +
-    "NATURAL FULL OUTER JOIN " +
-  "(SELECT arrivalGate, arrivalDate, arrivalStatus AS Status " +
-  "FROM ARRIVALS " +
-  "WHERE ((arrivalDate - TO_DATE('" + timeOfDay + "', 'yyyy-mm-dd hh24:mi:ss')) < (1/24) AND (arrivalDate - TO_DATE('" + timeOfDay + "', 'yyyy-mm-dd hh24:mi:ss')) > (-1/24))))");
+SELECT *
+FROM
+  ((SELECT departureGate, departureDate, departureStatus AS Status
+  FROM DEPARTURES
+  WHERE ((Insert time of day here) - departureDate) < (1/24) AND ((Insert time of day here) - departureDate) > (-1/24))
+    NATURAL FULL OUTER JOIN
+  (SELECT arrivalGate, arrivalDate, arrivalStatus AS Status
+  FROM ARRIVALS
+  WHERE ((arrivalDate - (Insert time of day here)) < (1/24) AND (arrivalDate - (Insert time of day here)) > (-1/24))));
 
 d)
 
-"SELECT passID, name, dateOfBirth, placeOfBirth, citizenship
+SELECT passID, name, dateOfBirth, placeOfBirth, citizenship
 FROM ASSOCIATEDDEPARTURE JOIN PASSENGER USING(passID)
-WHERE (" + gate + " = departureGate) AND (" + date + " = departureDate)
+WHERE ((Insert gate here) = departureGate) AND ((Insert date here) = departureDate)
 	UNION ALL
 SELECT passID, name, dateOfBirth, placeOfBirth, citizenship
 FROM ASSOCIATEDARRIVAL JOIN PASSENGER USING(passID)
-WHERE (" + gate + " = arrivalGate) AND (" + date + " = arrivalDate)"
+WHERE ((Insert gate here) = arrivalGate) AND ((Insert date here) = arrivalDate)
 
 	
 e)
 
-"SELECT bagID " +
-"FROM BOARDS " +
-"WHERE passID = " + passID + " AND flightID = " + flightID
+SELECT bagID
+FROM BOARDS
+WHERE passID = (Insert flightID here) AND flightID = (Insert flightID here)
 
 
 5.
