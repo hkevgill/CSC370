@@ -77,15 +77,20 @@ FROM(
 WHERE ROWNUM <= 3
 
 d)
+COUNT(status LIKE ('delayed to %')) AS numberOfDelays
+
 
 CREATE VIEW DELAYS AS(
-	SELECT flightID, COUNT(status LIKE ('delayed to %')) AS numberOfDelays
+	SELECT flightID, count(status) AS numberOfDelays
 	FROM
-		((SELECT INCOMING.flightID AS flightID, ARRIVALS.arrivalStatus AS status
-		FROM INCOMING JOIN ARRIVALS ON ((INCOMING.plannedArrivalTime = ARRIVALS.arrivalDate) AND (INCOMING.plannedArrivalGate = ARRIVALS.arrivalGate)))
-			UNION ALL
-		(SELECT OUTGOING.flightID AS flightID, DEPARTURES.departureStatus AS status
-		FROM OUTGOING JOIN DEPARTURES ON ((OUTGOING.plannedDepartureTime = DEPARTURES.departureDate) AND (OUTGOING.plannedDepartureGate = DEPARTURES.departureGate))))
+		(SELECT flightID, status
+		FROM
+			((SELECT INCOMING.flightID AS flightID, ARRIVALS.arrivalStatus AS status
+			FROM INCOMING JOIN ARRIVALS ON ((INCOMING.plannedArrivalTime = ARRIVALS.arrivalDate) AND (INCOMING.plannedArrivalGate = ARRIVALS.arrivalGate)))
+				UNION ALL
+			(SELECT OUTGOING.flightID AS flightID, DEPARTURES.departureStatus AS status
+			FROM OUTGOING JOIN DEPARTURES ON ((OUTGOING.plannedDepartureTime = DEPARTURES.departureDate) AND (OUTGOING.plannedDepartureGate = DEPARTURES.departureGate))))
+		WHERE status LIKE ('delayed to %'))
 	GROUP BY flightID
 )
 
