@@ -78,19 +78,17 @@ CREATE VIEW ALLFLIGHTSTATUS AS(
 	SELECT *
 	FROM(SELECT *
 		FROM (SELECT departureGate AS flightGate, departureDate AS flightDate, departureStatus AS flightStatus
-			FROM DEPARTURES) a
-				JOIN
-			(SELECT plannedDepartureGate AS flightGate, plannedDepartureTime AS flightDate
-			FROM OUTGOING) b
-				ON (a.flightGate = b.flightGate) AND (a.flightDate = b.flightDate))
+			FROM DEPARTURES)
+				NATURAL JOIN
+			(SELECT flightID, plannedDepartureGate AS flightGate, plannedDepartureTime AS flightDate
+			FROM OUTGOING))
 			UNION ALL
 		(SELECT *
 		FROM (SELECT arrivalGate AS flightGate, arrivalDate AS flightDate, arrivalStatus AS flightStatus
-			FROM ARRIVALS) c
-				JOIN
-			(SELECT plannedArrivalGate AS flightGate, plannedArrivalTime AS flightDate
-			FROM INCOMING) d
-				ON (c.flightGate = d.flightGate) AND (c.flightDate = d.flightDate))
+			FROM ARRIVALS)
+				NATURAL JOIN
+			(SELECT flightID, plannedArrivalGate AS flightGate, plannedArrivalTime AS flightDate
+			FROM INCOMING))
 )
 
 CREATE VIEW DELAYS AS(
