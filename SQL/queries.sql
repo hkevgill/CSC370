@@ -97,15 +97,22 @@ CREATE VIEW DELAYS AS(
 	WHERE flightStatus LIKE ('delayed to %')
 )
 
-SELECT source, destination, name, MAX(numDelays)
-FROM(SELECT source, destination, name, COUNT(name) as numDelays
+CREATE VIEW ROUTEDELAYS AS(
+	SELECT source, destination, name, COUNT(name) as numDelays
 	FROM(DELAYS 
 			JOIN 
 		(SELECT name, flightID
 		FROM AIRLINES JOIN OPERATES USING(airlineCode))
 			USING(flightID))
-	GROUP BY source, destination, name)
-GROUP BY source, destination
+	GROUP BY source, destination, name
+)
+
+SELECT source, destination, airlineName, maxDelays
+FROM (SELECT source, destination, MAX(name) as airlineName, MAX(numDelays) as maxDelays
+	FROM ROUTEDELAYS
+	GROUP BY source, destination)
+		NATURAL JOIN
+	ROUTEDELAYS
 
 
 -- Bonus
