@@ -24,13 +24,13 @@ public class PassengersInTransit extends HttpServlet {
                         "SELECT passID " +
                         "FROM BOARDS " +
                                 "NATURAL JOIN " +
-                            "(SELECT * " +
+                            "((SELECT * " +
                             "FROM (FLIGHTS JOIN INCOMING USING(flightID)) " +
                             "WHERE SYSDATE < plannedArrivalTime AND SYSDATE > plannedArrivalTime - duration) " +
                                 "UNION ALL " +
                             "(SELECT * " +
                             "FROM (FLIGHTS JOIN OUTGOING USING(flightID)) " +
-                            "WHERE SYSDATE > plannedDepartureTime AND SYSDATE < plannedDepartureTime + duration)");
+                            "WHERE SYSDATE > plannedDepartureTime AND SYSDATE < plannedDepartureTime + duration))");
             out.println("<table>");
             out.println("<tr>");
             out.println("<th>passID</th>");
