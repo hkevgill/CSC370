@@ -92,19 +92,17 @@ CREATE VIEW ALLFLIGHTSTATUS AS(
 )
 
 CREATE VIEW DELAYS AS(
-	SELECT source, destination, flightID, status
+	SELECT source, destination, flightID, flightStatus
 	FROM(FLIGHTS JOIN ALLFLIGHTSTATUS USING(flightID))
-	WHERE status LIKE ('delayed to %')
+	WHERE flightStatus LIKE ('delayed to %')
 )
 
-SELECT *
-FROM
-	(SELECT source, destination, name, SUM(numberOfDelays) AS numDelays
-	FROM
-		((SELECT AIRLINES.name AS name, OPERATES.flightID AS flightID
-		FROM AIRLINES JOIN OPERATES ON AIRLINES.airlineCode = OPERATES.airlineCode)
-			NATURAL JOIN
-		DELAYS)
-	GROUP BY name
-	ORDER BY source, destination, name, SUM(numberOfDelays) DESC)
-WHERE ROWNUM <= 1
+SELECT source, destination, name, MAX(numDelays)
+FROM(SELECT source, destination, name, COUNT(name) as numDelays
+	FROM(DELAYS 
+			JOIN 
+		(SELECT name, flightID
+		FROM AIRLINES JOIN OPERATES USING(airlineCode))
+			USING(flightID))
+	GROUP BY source, destination, name)
+GROUP BY source, destination
