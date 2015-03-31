@@ -67,45 +67,37 @@ WHERE ROWNUM <= 3
 
 d)
 
+SELECT *
+FROM (SELECT departureGate AS flightGate, departureDate AS flightDate, departureStatus AS flightStatus
+  FROM DEPARTURES) a
+    JOIN
+  (SELECT plannedDepartureGate AS flightGate, plannedDepartureTime AS flightDate
+  FROM OUTGOING) b
+    ON a.flightGate = b.flightGate AND a.flightDate = b.flightDate
+
 CREATE VIEW ALLFLIGHTSTATUS AS(
 	SELECT *
-	FROM(((SELECT departureGate AS flightGate, departureDate AS flightDate, departureStatus AS flightStatus
-		FROM DEPARTURES)
-			JOIN
-		(SELECT plannedDepartureGate AS flightGate, plannedDepartureTime AS flightDate
-		FROM OUTGOING)
-			ON (DEPARTURES.flightGate = OUTGOING.flightGate) AND (DEPARTURES.flightDate = OUTGOING.flightDate))
-				UNION ALL
-		((SELECT arrivalGate AS flightGate, arrivalDate AS flightDate, arrivalStatus AS flightStatus
-		FROM ARRIVALS)
-			JOIN
-		(SELECT plannedArrivalGate AS flightGate, plannedDepartureTime AS flightDate
-		FROM INCOMING)
-			ON (ARRIVALS.flightGate = INCOMING.flightGate) AND (ARRIVALS.flightDate = INCOMING.flightDate)))
+	FROM(SELECT *
+		FROM (SELECT departureGate AS flightGate, departureDate AS flightDate, departureStatus AS flightStatus
+			FROM DEPARTURES) a
+				JOIN
+			(SELECT plannedDepartureGate AS flightGate, plannedDepartureTime AS flightDate
+			FROM OUTGOING) b
+				ON (a.flightGate = b.flightGate) AND (a.flightDate = b.flightDate))
+			UNION ALL
+		(SELECT *
+		FROM (SELECT arrivalGate AS flightGate, arrivalDate AS flightDate, arrivalStatus AS flightStatus
+			FROM ARRIVALS) c
+				JOIN
+			(SELECT plannedArrivalGate AS flightGate, plannedArrivalTime AS flightDate
+			FROM INCOMING) d
+				ON (c.flightGate = d.flightGate) AND (c.flightDate = d.flightDate))
 )
 
 CREATE VIEW DELAYS AS(
 	SELECT source, destination, flightID, status
 	FROM(FLIGHTS JOIN ALLFLIGHTSTATUS USING(flightID))
 	WHERE status LIKE ('delayed to %')
-)
-
-
-
-
-
-CREATE VIEW DELAYS AS(
-	SELECT source, destination, flightID, count(status) AS numberOfDelays
-	FROM
-		(SELECT source, destination, flightID, status
-		FROM
-			((SELECT INCOMING.flightID AS flightID, ARRIVALS.arrivalStatus AS status
-			FROM INCOMING JOIN ARRIVALS ON ((INCOMING.plannedArrivalTime = ARRIVALS.arrivalDate) AND (INCOMING.plannedArrivalGate = ARRIVALS.arrivalGate)))
-				UNION ALL
-			(SELECT OUTGOING.flightID AS flightID, DEPARTURES.departureStatus AS status
-			FROM OUTGOING JOIN DEPARTURES ON ((OUTGOING.plannedDepartureTime = DEPARTURES.departureDate) AND (OUTGOING.plannedDepartureGate = DEPARTURES.departureGate))))
-		WHERE status LIKE ('delayed to %'))
-	GROUP BY flightID
 )
 
 SELECT *
