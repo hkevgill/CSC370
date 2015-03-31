@@ -67,6 +67,31 @@ WHERE ROWNUM <= 3
 
 d)
 
+CREATE VIEW ALLFLIGHTSTATUS AS(
+	SELECT 
+	FROM(((SELECT departureGate AS flightGate, departureDate AS flightDate, departureStatus AS flightStatus
+		FROM DEPARTURES)
+			JOIN
+		(SELECT plannedDepartureGate AS flightGate, plannedDepartureTime AS flightDate
+		FROM OUTGOING)
+			ON (DEPARTURES.flightGate = OUTGOING.flightGate) AND (DEPARTURES.flightDate = OUTGOING.flightDate))
+				JOIN
+		((SELECT arrivalGate AS flightGate, arrivalDate AS flightDate, arrivalStatus AS flightStatus
+		FROM ARRIVALS)
+			JOIN
+		(SELECT plannedArrivalGate AS flightGate, plannedDepartureTime AS flightDate
+		FROM INCOMING)
+			ON (ARRIVALS.flightGate = INCOMING.flightGate) AND (ARRIVALS.flightGate = INCOMING.flightDate)))
+)
+
+CREATE VIEW DELAYS AS(
+	SELECT source, destination, flightID, status
+	FROM(FLIGHTS JOIN ALLFLIGHTSTATUS USING(flightID))
+
+)
+
+
+
 CREATE VIEW DELAYS AS(
 	SELECT source, destination, flightID, count(status) AS numberOfDelays
 	FROM
