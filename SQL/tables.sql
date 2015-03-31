@@ -1,5 +1,24 @@
--- ENTITIES
+DROP TABLE OPERATES;
+DROP TABLE BOARDS;
+DROP TABLE BELONGTO;
+DROP TABLE ASSOCIATEDDEPARTURE;
+DROP TABLE ASSOCIATEDARRIVAL;
+DROP TABLE AIRLINES;
+DROP TABLE FLIGHTS;
+DROP TABLE INCOMING;
+DROP TABLE OUTGOING;
+DROP TABLE PLANEMODELS;
+DROP TABLE PASSENGERS;
+DROP TABLE BAGGAGE;
+DROP TABLE CLASS;
+DROP TABLE FIRSTCLASS;
+DROP TABLE REGULARCLASS;
+DROP TABLE SPECIALNEEDS;
+DROP TABLE INFANT;
+DROP TABLE DEPARTURES;
+DROP TABLE ARRIVALS;
 
+-- ENTITIES
 
 CREATE TABLE AIRLINES(
 	airlineCode VARCHAR(10) PRIMARY KEY,
@@ -161,71 +180,71 @@ CREATE TABLE ASSOCIATEDARRIVAL(
 
 -- INSERT STATEMENTS
 --- AIRLINES
-INSERT INTO AIRLINES(airlineCode,name,website) VALUES ("ACA","Air Canada","www.aircanada.com");
-INSERT INTO AIRLINES(airlineCode,name,website) VALUES ("SIA","Singapore Airlines","www.singaporeair.com");
-INSERT INTO AIRLINES(airlineCode,name,website) VALUES ("WJA","WestJet","www.aircanada.com");
-INSERT INTO AIRLINES(airlineCode,name,website) VALUES ("BAW","British Airways","www.britishairways.com");
-INSERT INTO AIRLINES(airlineCode,name,website) VALUES ("AFR","Air France","www.airfrance.co.uk");
+INSERT INTO AIRLINES(airlineCode,name,website) VALUES ('ACA','Air Canada','www.aircanada.com');
+INSERT INTO AIRLINES(airlineCode,name,website) VALUES ('SIA','Singapore Airlines','www.singaporeair.com');
+INSERT INTO AIRLINES(airlineCode,name,website) VALUES ('WJA','WestJet','www.aircanada.com');
+INSERT INTO AIRLINES(airlineCode,name,website) VALUES ('BAW','British Airways','www.britishairways.com');
+INSERT INTO AIRLINES(airlineCode,name,website) VALUES ('AFR','Air France','www.airfrance.co.uk');
 
 -- FLIGHTS
-INSERT INTO FLIGHTS(flightID,flightNumber,source,destination) VALUES (1,"AC100","Victoria","Vancouver");
-INSERT INTO FLIGHTS(flightID,flightNumber,source,destination) VALUES (2,"AC200","Vancouver","Las Vegas");
-INSERT INTO FLIGHTS(flightID,flightNumber,source,destination) VALUES (3,"SA100","Montreal","Vancouver");
-INSERT INTO FLIGHTS(flightID,flightNumber,source,destination) VALUES (4,"SA200","Vancouver","Victoria");
-INSERT INTO FLIGHTS(flightID,flightNumber,source,destination) VALUES (5,"WJ100","Victoria","Vancouver");
-INSERT INTO FLIGHTS(flightID,flightNumber,source,destination) VALUES (6,"WJ200","Vancouver","Portland");
-INSERT INTO FLIGHTS(flightID,flightNumber,source,destination) VALUES (7,"BA100","London","Vancouver");
-INSERT INTO FLIGHTS(flightID,flightNumber,source,destination) VALUES (8,"BA200","Vancouver","Calgary");
-INSERT INTO FLIGHTS(flightID,flightNumber,source,destination) VALUES (9,"AF100","Paris","Vancouver");
-INSERT INTO FLIGHTS(flightID,flightNumber,source,destination) VALUES (10,"AF200","Vancouver","Victoria");
-INSERT INTO FLIGHTS(flightID,flightNumber,source,destination) VALUES (98,"AF998","Victoria","Vancouver");
-INSERT INTO FLIGHTS(flightID,flightNumber,source,destination) VALUES (99,"AF999","Vancouver","Las Vegas");
+INSERT INTO FLIGHTS(flightID,flightNumber,source,destination) VALUES (1,'AC100','Victoria','Vancouver');
+INSERT INTO FLIGHTS(flightID,flightNumber,source,destination) VALUES (2,'AC200','Vancouver','Las Vegas');
+INSERT INTO FLIGHTS(flightID,flightNumber,source,destination) VALUES (3,'SA100','Montreal','Vancouver');
+INSERT INTO FLIGHTS(flightID,flightNumber,source,destination) VALUES (4,'SA200','Vancouver','Victoria');
+INSERT INTO FLIGHTS(flightID,flightNumber,source,destination) VALUES (5,'WJ100','Victoria','Vancouver');
+INSERT INTO FLIGHTS(flightID,flightNumber,source,destination) VALUES (6,'WJ200','Vancouver','Portland');
+INSERT INTO FLIGHTS(flightID,flightNumber,source,destination) VALUES (7,'BA100','London','Vancouver');
+INSERT INTO FLIGHTS(flightID,flightNumber,source,destination) VALUES (8,'BA200','Vancouver','Calgary');
+INSERT INTO FLIGHTS(flightID,flightNumber,source,destination) VALUES (9,'AF100','Paris','Vancouver');
+INSERT INTO FLIGHTS(flightID,flightNumber,source,destination) VALUES (10,'AF200','Vancouver','Victoria');
+INSERT INTO FLIGHTS(flightID,flightNumber,source,destination) VALUES (98,'AF998','Victoria','Vancouver');
+INSERT INTO FLIGHTS(flightID,flightNumber,source,destination) VALUES (99,'AF999','Vancouver','Las Vegas');
 
 -- INCOMING
-INSERT INTO INCOMING(flightID,plannedArrivalTime,plannedArrivalGate) VALUES (1,"2015-03-31 11:00:00","A1");
-INSERT INTO INCOMING(flightID,plannedArrivalTime,plannedArrivalGate) VALUES (3,"2015-03-31 13:00:00","A3");
-INSERT INTO INCOMING(flightID,plannedArrivalTime,plannedArrivalGate) VALUES (5,"2015-03-31 15:00:00","A5");
-INSERT INTO INCOMING(flightID,plannedArrivalTime,plannedArrivalGate) VALUES (7,"2015-03-31 17:00:00","A7");
-INSERT INTO INCOMING(flightID,plannedArrivalTime,plannedArrivalGate) VALUES (9,"2015-03-31 19:00:00","A9");
-INSERT INTO INCOMING(flightID,plannedArrivalTime,plannedArrivalGate) VALUES (98,"2015-03-30 17:30:00","A98");
+INSERT INTO INCOMING(flightID,plannedArrivalTime,plannedArrivalGate) VALUES (1,'2015-03-31 11:00:00','A1');
+INSERT INTO INCOMING(flightID,plannedArrivalTime,plannedArrivalGate) VALUES (3,'2015-03-31 13:00:00','A3');
+INSERT INTO INCOMING(flightID,plannedArrivalTime,plannedArrivalGate) VALUES (5,'2015-03-31 15:00:00','A5');
+INSERT INTO INCOMING(flightID,plannedArrivalTime,plannedArrivalGate) VALUES (7,'2015-03-31 17:00:00','A7');
+INSERT INTO INCOMING(flightID,plannedArrivalTime,plannedArrivalGate) VALUES (9,'2015-03-31 19:00:00','A9');
+INSERT INTO INCOMING(flightID,plannedArrivalTime,plannedArrivalGate) VALUES (98,'2015-03-30 17:30:00','A98');
 
 -- OUTGOING
-INSERT INTO OUTGOING(flightID,plannedDepartureTime,plannedDepartureGate) VALUES (2,"2015-03-31 12:00:00","B2");
-INSERT INTO OUTGOING(flightID,plannedDepartureTime,plannedDepartureGate) VALUES (4,"2015-03-31 14:00:00","B4");
-INSERT INTO OUTGOING(flightID,plannedDepartureTime,plannedDepartureGate) VALUES (6,"2015-03-31 16:00:00","B6");
-INSERT INTO OUTGOING(flightID,plannedDepartureTime,plannedDepartureGate) VALUES (8,"2015-03-31 18:00:00","B8");
-INSERT INTO OUTGOING(flightID,plannedDepartureTime,plannedDepartureGate) VALUES (10,"2015-03-31 20:00:00","B10");
-INSERT INTO OUTGOING(flightID,plannedDepartureTime,plannedDepartureGate) VALUES (99,"2015-03-30 18:30:00","B99");
+INSERT INTO OUTGOING(flightID,plannedDepartureTime,plannedDepartureGate) VALUES (2,'2015-03-31 12:00:00','B2');
+INSERT INTO OUTGOING(flightID,plannedDepartureTime,plannedDepartureGate) VALUES (4,'2015-03-31 14:00:00','B4');
+INSERT INTO OUTGOING(flightID,plannedDepartureTime,plannedDepartureGate) VALUES (6,'2015-03-31 16:00:00','B6');
+INSERT INTO OUTGOING(flightID,plannedDepartureTime,plannedDepartureGate) VALUES (8,'2015-03-31 18:00:00','B8');
+INSERT INTO OUTGOING(flightID,plannedDepartureTime,plannedDepartureGate) VALUES (10,'2015-03-31 20:00:00','B10');
+INSERT INTO OUTGOING(flightID,plannedDepartureTime,plannedDepartureGate) VALUES (99,'2015-03-30 18:30:00','B99');
 
 -- PLANEMODELS
-INSERT INTO PLANEMODELS(planeCode,capacity) VALUES ("A310",220);
-INSERT INTO PLANEMODELS(planeCode,capacity) VALUES ("A320",150);
-INSERT INTO PLANEMODELS(planeCode,capacity) VALUES ("A330",300);
-INSERT INTO PLANEMODELS(planeCode,capacity) VALUES ("A340",359);
-INSERT INTO PLANEMODELS(planeCode,capacity) VALUES ("A380",853);
-INSERT INTO PLANEMODELS(planeCode,capacity) VALUES ("B712",106);
-INSERT INTO PLANEMODELS(planeCode,capacity) VALUES ("B722",131);
-INSERT INTO PLANEMODELS(planeCode,capacity) VALUES ("B733",149);
-INSERT INTO PLANEMODELS(planeCode,capacity) VALUES ("B744",345);
-INSERT INTO PLANEMODELS(planeCode,capacity) VALUES ("B762",252);
-INSERT INTO PLANEMODELS(planeCode,capacity) VALUES ("B772",451);
+INSERT INTO PLANEMODELS(planeCode,capacity) VALUES ('A310',220);
+INSERT INTO PLANEMODELS(planeCode,capacity) VALUES ('A320',150);
+INSERT INTO PLANEMODELS(planeCode,capacity) VALUES ('A330',300);
+INSERT INTO PLANEMODELS(planeCode,capacity) VALUES ('A340',359);
+INSERT INTO PLANEMODELS(planeCode,capacity) VALUES ('A380',853);
+INSERT INTO PLANEMODELS(planeCode,capacity) VALUES ('B712',106);
+INSERT INTO PLANEMODELS(planeCode,capacity) VALUES ('B722',131);
+INSERT INTO PLANEMODELS(planeCode,capacity) VALUES ('B733',149);
+INSERT INTO PLANEMODELS(planeCode,capacity) VALUES ('B744',345);
+INSERT INTO PLANEMODELS(planeCode,capacity) VALUES ('B762',252);
+INSERT INTO PLANEMODELS(planeCode,capacity) VALUES ('B772',451);
 
 -- PASSENGERS
-INSERT INTO PASSENGERS(passID,name,dateOfBirth,placeOfBirth,citizenship) VALUES (1001,"Chris Cook","1988-07-25 00:00:00","North Vancouver","Canadian");
-INSERT INTO PASSENGERS(passID,name,dateOfBirth,placeOfBirth,citizenship) VALUES (1002,"Kevin Gill","1993-01-10 00:00:00","Duncan","Canadian");
-INSERT INTO PASSENGERS(passID,name,dateOfBirth,placeOfBirth,citizenship) VALUES (1003,"Brendan Beach","1994-09-28 00:00:00","Victoria","Canadian");
-INSERT INTO PASSENGERS(passID,name,dateOfBirth,placeOfBirth,citizenship) VALUES (1004,"Niels Bohr","1885-10-07 00:00:00","Copenhagen","Danish");
-INSERT INTO PASSENGERS(passID,name,dateOfBirth,placeOfBirth,citizenship) VALUES (1005,"Albert Einstein","1879-03-14 00:00:00","Wurttemberg","Swiss");
-INSERT INTO PASSENGERS(passID,name,dateOfBirth,placeOfBirth,citizenship) VALUES (1006,"Stephen Hawking","1942-01-08 00:00:00","Oxford","British");
-INSERT INTO PASSENGERS(passID,name,dateOfBirth,placeOfBirth,citizenship) VALUES (1007,"Isaac Newton","1642-12-25 00:00:00","Lincolnshire","English");
-INSERT INTO PASSENGERS(passID,name,dateOfBirth,placeOfBirth,citizenship) VALUES (1008,"Galileo Galilei","1564-02-15 00:00:00","Florence","Italian");
-INSERT INTO PASSENGERS(passID,name,dateOfBirth,placeOfBirth,citizenship) VALUES (1009,"Marie Curie","1867-11-07 00:00:00","Warsaw","Polish");
-INSERT INTO PASSENGERS(passID,name,dateOfBirth,placeOfBirth,citizenship) VALUES (1010,"Robert Hooke","1635-07-28 00:00:00","Isle of Wright","English");
-INSERT INTO PASSENGERS(passID,name,dateOfBirth,placeOfBirth,citizenship) VALUES (1011,"Richard Feynman","1918-05-11 00:00:00","Los Angeles","American");
-INSERT INTO PASSENGERS(passID,name,dateOfBirth,placeOfBirth,citizenship) VALUES (1012,"Michael Faraday","1791-09-22 00:00:00","Newington Butts","British");
-INSERT INTO PASSENGERS(passID,name,dateOfBirth,placeOfBirth,citizenship) VALUES (1013,"Max Planck","1858-04-23 00:00:00","Lower Saxony","German");
-INSERT INTO PASSENGERS(passID,name,dateOfBirth,placeOfBirth,citizenship) VALUES (1014,"Erwin Schrodinger","1858-04-23 00:00:00","Vienna","Austrian");
-INSERT INTO PASSENGERS(passID,name,dateOfBirth,placeOfBirth,citizenship) VALUES (1015,"James Clerk Maxwell","1831-06-13 00:00:00","Edinburgh","Scottish");
+INSERT INTO PASSENGERS(passID,name,dateOfBirth,placeOfBirth,citizenship) VALUES (1001,'Chris Cook','1988-07-25 00:00:00','North Vancouver','Canadian');
+INSERT INTO PASSENGERS(passID,name,dateOfBirth,placeOfBirth,citizenship) VALUES (1002,'Kevin Gill','1993-01-10 00:00:00','Duncan','Canadian');
+INSERT INTO PASSENGERS(passID,name,dateOfBirth,placeOfBirth,citizenship) VALUES (1003,'Brendan Beach','1994-09-28 00:00:00','Victoria','Canadian');
+INSERT INTO PASSENGERS(passID,name,dateOfBirth,placeOfBirth,citizenship) VALUES (1004,'Niels Bohr','1885-10-07 00:00:00','Copenhagen','Danish');
+INSERT INTO PASSENGERS(passID,name,dateOfBirth,placeOfBirth,citizenship) VALUES (1005,'Albert Einstein','1879-03-14 00:00:00','Wurttemberg','Swiss');
+INSERT INTO PASSENGERS(passID,name,dateOfBirth,placeOfBirth,citizenship) VALUES (1006,'Stephen Hawking','1942-01-08 00:00:00','Oxford','British');
+INSERT INTO PASSENGERS(passID,name,dateOfBirth,placeOfBirth,citizenship) VALUES (1007,'Isaac Newton','1642-12-25 00:00:00','Lincolnshire','English');
+INSERT INTO PASSENGERS(passID,name,dateOfBirth,placeOfBirth,citizenship) VALUES (1008,'Galileo Galilei','1564-02-15 00:00:00','Florence','Italian');
+INSERT INTO PASSENGERS(passID,name,dateOfBirth,placeOfBirth,citizenship) VALUES (1009,'Marie Curie','1867-11-07 00:00:00','Warsaw','Polish');
+INSERT INTO PASSENGERS(passID,name,dateOfBirth,placeOfBirth,citizenship) VALUES (1010,'Robert Hooke','1635-07-28 00:00:00','Isle of Wright','English');
+INSERT INTO PASSENGERS(passID,name,dateOfBirth,placeOfBirth,citizenship) VALUES (1011,'Richard Feynman','1918-05-11 00:00:00','Los Angeles','American');
+INSERT INTO PASSENGERS(passID,name,dateOfBirth,placeOfBirth,citizenship) VALUES (1012,'Michael Faraday','1791-09-22 00:00:00','Newington Butts','British');
+INSERT INTO PASSENGERS(passID,name,dateOfBirth,placeOfBirth,citizenship) VALUES (1013,'Max Planck','1858-04-23 00:00:00','Lower Saxony','German');
+INSERT INTO PASSENGERS(passID,name,dateOfBirth,placeOfBirth,citizenship) VALUES (1014,'Erwin Schrodinger','1858-04-23 00:00:00','Vienna','Austrian');
+INSERT INTO PASSENGERS(passID,name,dateOfBirth,placeOfBirth,citizenship) VALUES (1015,'James Clerk Maxwell','1831-06-13 00:00:00','Edinburgh','Scottish');
 
 -- BAGGAGE
 INSERT INTO BAGGAGE(bagID) VALUES (1101);
@@ -264,53 +283,53 @@ INSERT INTO CLASS(classID) VALUES (14);
 INSERT INTO CLASS(classID) VALUES (15);
 
 -- FIRSTCLASS
-INSERT INTO FIRSTCLASS(classID,dessert,mealChoice,partyFavors,numberOfPillows,winePreference) VALUES (1,"Chocolate Terrine","Kobe Tartare","8oz of Mexican black-tar heroin",13,"1938 Montrachet, 1942 Le Pan");
-INSERT INTO FIRSTCLASS(classID,dessert,mealChoice,partyFavors,numberOfPillows,winePreference) VALUES (2,"Buche De Noel","Prime Rib","Vicodin",6,"Screaming Eagle Cabernet Sauvignon");
+INSERT INTO FIRSTCLASS(classID,dessert,mealChoice,partyFavors,numberOfPillows,winePreference) VALUES (1,'Chocolate Terrine','Kobe Tartare','8oz of Mexican black-tar heroin',13,'1938 Montrachet, 1942 Le Pan');
+INSERT INTO FIRSTCLASS(classID,dessert,mealChoice,partyFavors,numberOfPillows,winePreference) VALUES (2,'Buche De Noel','Prime Rib','Vicodin',6,'Screaming Eagle Cabernet Sauvignon');
 
 -- REGULARCLASS
-INSERT INTO REGULARCLASS(classID,mealChoice) VALUES (3,"Mashed Potatoes");
-INSERT INTO REGULARCLASS(classID,mealChoice) VALUES (4,"Mashed Potatoes");
-INSERT INTO REGULARCLASS(classID,mealChoice) VALUES (5,"Mashed Potatoes");
-INSERT INTO REGULARCLASS(classID,mealChoice) VALUES (6,"Mashed Potatoes");
-INSERT INTO REGULARCLASS(classID,mealChoice) VALUES (7,"Mashed Potatoes");
-INSERT INTO REGULARCLASS(classID,mealChoice) VALUES (8,"Mashed Potatoes");
-INSERT INTO REGULARCLASS(classID,mealChoice) VALUES (9,"Mashed Potatoes");
-INSERT INTO REGULARCLASS(classID,mealChoice) VALUES (10,"Mashed Potatoes");
-INSERT INTO REGULARCLASS(classID,mealChoice) VALUES (11,"Mashed Potatoes");
-INSERT INTO REGULARCLASS(classID,mealChoice) VALUES (12,"Mashed Potatoes");
-INSERT INTO REGULARCLASS(classID,mealChoice) VALUES (13,"Mashed Potatoes");
-INSERT INTO REGULARCLASS(classID,mealChoice) VALUES (14,"Mashed Potatoes");
-INSERT INTO REGULARCLASS(classID,mealChoice) VALUES (15,"Mashed Potatoes");
+INSERT INTO REGULARCLASS(classID,mealChoice) VALUES (3,'Mashed Potatoes');
+INSERT INTO REGULARCLASS(classID,mealChoice) VALUES (4,'Mashed Potatoes');
+INSERT INTO REGULARCLASS(classID,mealChoice) VALUES (5,'Mashed Potatoes');
+INSERT INTO REGULARCLASS(classID,mealChoice) VALUES (6,'Mashed Potatoes');
+INSERT INTO REGULARCLASS(classID,mealChoice) VALUES (7,'Mashed Potatoes');
+INSERT INTO REGULARCLASS(classID,mealChoice) VALUES (8,'Mashed Potatoes');
+INSERT INTO REGULARCLASS(classID,mealChoice) VALUES (9,'Mashed Potatoes');
+INSERT INTO REGULARCLASS(classID,mealChoice) VALUES (10,'Mashed Potatoes');
+INSERT INTO REGULARCLASS(classID,mealChoice) VALUES (11,'Mashed Potatoes');
+INSERT INTO REGULARCLASS(classID,mealChoice) VALUES (12,'Mashed Potatoes');
+INSERT INTO REGULARCLASS(classID,mealChoice) VALUES (13,'Mashed Potatoes');
+INSERT INTO REGULARCLASS(classID,mealChoice) VALUES (14,'Mashed Potatoes');
+INSERT INTO REGULARCLASS(classID,mealChoice) VALUES (15,'Mashed Potatoes');
 
 -- DEPARTURES
-INSERT INTO DEPARTURES(departureGate,departureDate,departureStatus) VALUES ("B2","2015-03-31 12:00:00","delayed to 12:15:00");
-INSERT INTO DEPARTURES(departureGate,departureDate,departureStatus) VALUES ("B4","2015-03-31 14:00:00","delayed to 14:15:00");
-INSERT INTO DEPARTURES(departureGate,departureDate,departureStatus) VALUES ("B6","2015-03-31 16:00:00","delayed to 16:15:00");
-INSERT INTO DEPARTURES(departureGate,departureDate,departureStatus) VALUES ("B8","2015-03-31 18:00:00","delayed to 18:15:00");
-INSERT INTO DEPARTURES(departureGate,departureDate,departureStatus) VALUES ("B10","2015-03-31 20:00:00","delayed to 20:15:00");
-INSERT INTO DEPARTURES(departureGate,departureDate,departureStatus) VALUES ("B99","2015-03-30 18:30:00","delayed to 18:45:00");
+INSERT INTO DEPARTURES(departureGate,departureDate,departureStatus) VALUES ('B2','2015-03-31 12:00:00','delayed to 12:15:00');
+INSERT INTO DEPARTURES(departureGate,departureDate,departureStatus) VALUES ('B4','2015-03-31 14:00:00','delayed to 14:15:00');
+INSERT INTO DEPARTURES(departureGate,departureDate,departureStatus) VALUES ('B6','2015-03-31 16:00:00','delayed to 16:15:00');
+INSERT INTO DEPARTURES(departureGate,departureDate,departureStatus) VALUES ('B8','2015-03-31 18:00:00','delayed to 18:15:00');
+INSERT INTO DEPARTURES(departureGate,departureDate,departureStatus) VALUES ('B10','2015-03-31 20:00:00','delayed to 20:15:00');
+INSERT INTO DEPARTURES(departureGate,departureDate,departureStatus) VALUES ('B99','2015-03-30 18:30:00','delayed to 18:45:00');
 
 -- ARRIVALS
-INSERT INTO ARRIVALS(arrivalGate,arrivalDate,arrivalStatus) VALUES ("A1","2015-03-31 13:00:00","delayed to 11:15:00");
-INSERT INTO ARRIVALS(arrivalGate,arrivalDate,arrivalStatus) VALUES ("A3","2015-03-31 15:00:00","delayed to 13:15:00");
-INSERT INTO ARRIVALS(arrivalGate,arrivalDate,arrivalStatus) VALUES ("A5","2015-03-31 17:00:00","delayed to 15:15:00");
-INSERT INTO ARRIVALS(arrivalGate,arrivalDate,arrivalStatus) VALUES ("A7","2015-03-31 19:00:00","delayed to 17:15:00");
-INSERT INTO ARRIVALS(arrivalGate,arrivalDate,arrivalStatus) VALUES ("A9","2015-03-31 21:00:00","delayed to 19:15:00");
-INSERT INTO ARRIVALS(arrivalGate,arrivalDate,arrivalStatus) VALUES ("A98","2015-03-0 17:30:00","delayed to 17:45:00");
+INSERT INTO ARRIVALS(arrivalGate,arrivalDate,arrivalStatus) VALUES ('A1','2015-03-31 13:00:00','delayed to 11:15:00');
+INSERT INTO ARRIVALS(arrivalGate,arrivalDate,arrivalStatus) VALUES ('A3','2015-03-31 15:00:00','delayed to 13:15:00');
+INSERT INTO ARRIVALS(arrivalGate,arrivalDate,arrivalStatus) VALUES ('A5','2015-03-31 17:00:00','delayed to 15:15:00');
+INSERT INTO ARRIVALS(arrivalGate,arrivalDate,arrivalStatus) VALUES ('A7','2015-03-31 19:00:00','delayed to 17:15:00');
+INSERT INTO ARRIVALS(arrivalGate,arrivalDate,arrivalStatus) VALUES ('A9','2015-03-31 21:00:00','delayed to 19:15:00');
+INSERT INTO ARRIVALS(arrivalGate,arrivalDate,arrivalStatus) VALUES ('A98','2015-03-0 17:30:00','delayed to 17:45:00');
 
 -- OPERATES
-INSERT INTO OPERATES(airlineCode,flightID,planeCode) VALUES ("ACA",1,"B712");
-INSERT INTO OPERATES(airlineCode,flightID,planeCode) VALUES ("ACA",2,"B744");
-INSERT INTO OPERATES(airlineCode,flightID,planeCode) VALUES ("SIA",3,"A330");
-INSERT INTO OPERATES(airlineCode,flightID,planeCode) VALUES ("SIA",4,"B712");
-INSERT INTO OPERATES(airlineCode,flightID,planeCode) VALUES ("WJA",5,"B712");
-INSERT INTO OPERATES(airlineCode,flightID,planeCode) VALUES ("WJA",6,"A310");
-INSERT INTO OPERATES(airlineCode,flightID,planeCode) VALUES ("BAW",7,"A340");
-INSERT INTO OPERATES(airlineCode,flightID,planeCode) VALUES ("BAW",8,"A310");
-INSERT INTO OPERATES(airlineCode,flightID,planeCode) VALUES ("AFR",9,"A340");
-INSERT INTO OPERATES(airlineCode,flightID,planeCode) VALUES ("AFR",10,"B712");
-INSERT INTO OPERATES(airlineCode,flightID,planeCode) VALUES ("ACA",98,"A310");
-INSERT INTO OPERATES(airlineCode,flightID,planeCode) VALUES ("ACA",99,"A320");
+INSERT INTO OPERATES(airlineCode,flightID,planeCode) VALUES ('ACA',1,'B712');
+INSERT INTO OPERATES(airlineCode,flightID,planeCode) VALUES ('ACA',2,'B744');
+INSERT INTO OPERATES(airlineCode,flightID,planeCode) VALUES ('SIA',3,'A330');
+INSERT INTO OPERATES(airlineCode,flightID,planeCode) VALUES ('SIA',4,'B712');
+INSERT INTO OPERATES(airlineCode,flightID,planeCode) VALUES ('WJA',5,'B712');
+INSERT INTO OPERATES(airlineCode,flightID,planeCode) VALUES ('WJA',6,'A310');
+INSERT INTO OPERATES(airlineCode,flightID,planeCode) VALUES ('BAW',7,'A340');
+INSERT INTO OPERATES(airlineCode,flightID,planeCode) VALUES ('BAW',8,'A310');
+INSERT INTO OPERATES(airlineCode,flightID,planeCode) VALUES ('AFR',9,'A340');
+INSERT INTO OPERATES(airlineCode,flightID,planeCode) VALUES ('AFR',10,'B712');
+INSERT INTO OPERATES(airlineCode,flightID,planeCode) VALUES ('ACA',98,'A310');
+INSERT INTO OPERATES(airlineCode,flightID,planeCode) VALUES ('ACA',99,'A320');
 
 -- BOARDS
 INSERT INTO BOARDS(flightID,bagID,passID) VALUES (1,1101,1001)
@@ -349,21 +368,21 @@ INSERT INTO BELONGTO(passID,classID) VALUES (1014,14)
 INSERT INTO BELONGTO(passID,classID) VALUES (1015,15)
 
 -- ASSOCIATEDDEPARTURE
-INSERT INTO ASSOCIATEDDEPARTURE(passID,departureGate,departureDate) VALUES (1002,"B2","2015-03-31 12:00:00")
-INSERT INTO ASSOCIATEDDEPARTURE(passID,departureGate,departureDate) VALUES (1004,"B4","2015-03-31 14:00:00")
-INSERT INTO ASSOCIATEDDEPARTURE(passID,departureGate,departureDate) VALUES (1006,"B6","2015-03-31 16:00:00")
-INSERT INTO ASSOCIATEDDEPARTURE(passID,departureGate,departureDate) VALUES (1008,"B8","2015-03-31 18:00:00")
-INSERT INTO ASSOCIATEDDEPARTURE(passID,departureGate,departureDate) VALUES (1010,"B10","2015-03-31 20:00:00")
-INSERT INTO ASSOCIATEDDEPARTURE(passID,departureGate,departureDate) VALUES (1012,"B2","2015-03-31 12:00:00")
-INSERT INTO ASSOCIATEDDEPARTURE(passID,departureGate,departureDate) VALUES (1014,"B4","2015-03-31 14:00:00")
-INSERT INTO ASSOCIATEDDEPARTURE(passID,departureGate,departureDate) VALUES (1002,"B99","2015-03-30 18:30:00")
+INSERT INTO ASSOCIATEDDEPARTURE(passID,departureGate,departureDate) VALUES (1002,'B2','2015-03-31 12:00:00')
+INSERT INTO ASSOCIATEDDEPARTURE(passID,departureGate,departureDate) VALUES (1004,'B4','2015-03-31 14:00:00')
+INSERT INTO ASSOCIATEDDEPARTURE(passID,departureGate,departureDate) VALUES (1006,'B6','2015-03-31 16:00:00')
+INSERT INTO ASSOCIATEDDEPARTURE(passID,departureGate,departureDate) VALUES (1008,'B8','2015-03-31 18:00:00')
+INSERT INTO ASSOCIATEDDEPARTURE(passID,departureGate,departureDate) VALUES (1010,'B10','2015-03-31 20:00:00')
+INSERT INTO ASSOCIATEDDEPARTURE(passID,departureGate,departureDate) VALUES (1012,'B2','2015-03-31 12:00:00')
+INSERT INTO ASSOCIATEDDEPARTURE(passID,departureGate,departureDate) VALUES (1014,'B4','2015-03-31 14:00:00')
+INSERT INTO ASSOCIATEDDEPARTURE(passID,departureGate,departureDate) VALUES (1002,'B99','2015-03-30 18:30:00')
 
 -- ASSOCIATEDARRIVAL
-INSERT INTO ASSOCIATEDARRIVAL(passID,arrivalGate,arrivalDate) VALUES (1001,"A1","2015-03-31 11:00:00")
-INSERT INTO ASSOCIATEDARRIVAL(passID,arrivalGate,arrivalDate) VALUES (1003,"A3","2015-03-31 13:00:00")
-INSERT INTO ASSOCIATEDARRIVAL(passID,arrivalGate,arrivalDate) VALUES (1005,"A5","2015-03-31 15:00:00")
-INSERT INTO ASSOCIATEDARRIVAL(passID,arrivalGate,arrivalDate) VALUES (1007,"A7","2015-03-31 17:00:00")
-INSERT INTO ASSOCIATEDARRIVAL(passID,arrivalGate,arrivalDate) VALUES (1009,"A9","2015-03-31 19:00:00")
-INSERT INTO ASSOCIATEDARRIVAL(passID,arrivalGate,arrivalDate) VALUES (1011,"A1","2015-03-31 11:00:00")
-INSERT INTO ASSOCIATEDARRIVAL(passID,arrivalGate,arrivalDate) VALUES (1013,"A3","2015-03-31 13:00:00")
-INSERT INTO ASSOCIATEDARRIVAL(passID,arrivalGate,arrivalDate) VALUES (1001,"A98","2015-03-30 17:30:00")
+INSERT INTO ASSOCIATEDARRIVAL(passID,arrivalGate,arrivalDate) VALUES (1001,'A1','2015-03-31 11:00:00')
+INSERT INTO ASSOCIATEDARRIVAL(passID,arrivalGate,arrivalDate) VALUES (1003,'A3','2015-03-31 13:00:00')
+INSERT INTO ASSOCIATEDARRIVAL(passID,arrivalGate,arrivalDate) VALUES (1005,'A5','2015-03-31 15:00:00')
+INSERT INTO ASSOCIATEDARRIVAL(passID,arrivalGate,arrivalDate) VALUES (1007,'A7','2015-03-31 17:00:00')
+INSERT INTO ASSOCIATEDARRIVAL(passID,arrivalGate,arrivalDate) VALUES (1009,'A9','2015-03-31 19:00:00')
+INSERT INTO ASSOCIATEDARRIVAL(passID,arrivalGate,arrivalDate) VALUES (1011,'A1','2015-03-31 11:00:00')
+INSERT INTO ASSOCIATEDARRIVAL(passID,arrivalGate,arrivalDate) VALUES (1013,'A3','2015-03-31 13:00:00')
+INSERT INTO ASSOCIATEDARRIVAL(passID,arrivalGate,arrivalDate) VALUES (1001,'A98','2015-03-30 17:30:00')
