@@ -28,11 +28,11 @@ FROM
 d)
 
 SELECT passID, name, dateOfBirth, placeOfBirth, citizenship
-FROM ASSOCIATEDDEPARTURE JOIN PASSENGER USING(passID)
+FROM ASSOCIATEDDEPARTURE JOIN PASSENGERS USING(passID)
 WHERE ((Insert gate here) = departureGate) AND ((Insert date here) = departureDate)
 	UNION ALL
 SELECT passID, name, dateOfBirth, placeOfBirth, citizenship
-FROM ASSOCIATEDARRIVAL JOIN PASSENGER USING(passID)
+FROM ASSOCIATEDARRIVAL JOIN PASSENGERS USING(passID)
 WHERE ((Insert gate here) = arrivalGate) AND ((Insert date here) = arrivalDate)
 
 e)
@@ -106,3 +106,24 @@ FROM(SELECT source, destination, name, COUNT(name) as numDelays
 			USING(flightID))
 	GROUP BY source, destination, name)
 GROUP BY source, destination
+
+
+-- Bonus
+
+SELECT passID, name, timesFlown
+FROM(SELECT *
+	FROM(
+		(SELECT passID, COUNT(passID) AS timesFlown
+		FROM ((SELECT *
+			FROM AIRLINES JOIN OPERATES USING(airlineCode)
+			WHERE AIRLINES.name = 'Air Canada')
+				JOIN
+			(SELECT *
+			FROM PASSENGERS JOIN BOARDS USING(passID))
+				USING(flightID))
+		GROUP BY passID)
+			JOIN PASSENGERS USING(passID)
+		)
+	ORDER BY timesFlown DESC)
+WHERE ROWNUM <= 1
+

@@ -198,8 +198,8 @@ INSERT INTO FLIGHTS(flightID,flightNumber,source,destination, duration) VALUES (
 INSERT INTO FLIGHTS(flightID,flightNumber,source,destination, duration) VALUES (8,'BA200','Vancouver','Calgary',2/24);
 INSERT INTO FLIGHTS(flightID,flightNumber,source,destination, duration) VALUES (9,'AF100','Paris','Vancouver',16/24);
 INSERT INTO FLIGHTS(flightID,flightNumber,source,destination, duration) VALUES (10,'AF200','Vancouver','Victoria',1/24);
-INSERT INTO FLIGHTS(flightID,flightNumber,source,destination, duration) VALUES (98,'AF998','Victoria','Vancouver',1/24);
-INSERT INTO FLIGHTS(flightID,flightNumber,source,destination, duration) VALUES (99,'AF999','Vancouver','Las Vegas',4/24);
+INSERT INTO FLIGHTS(flightID,flightNumber,source,destination, duration) VALUES (98,'AC998','Victoria','Vancouver',1/24);
+INSERT INTO FLIGHTS(flightID,flightNumber,source,destination, duration) VALUES (99,'AC999','Vancouver','Las Vegas',4/24);
 
 -- INCOMING
 INSERT INTO INCOMING(flightID,plannedArrivalTime,plannedArrivalGate) VALUES (1,TO_DATE('2015-03-31 11:00:00', 'yyyy-mm-dd hh24:mi:ss'),'A1');
