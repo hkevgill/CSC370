@@ -107,12 +107,9 @@ CREATE VIEW ROUTEDELAYS AS(
 	GROUP BY source, destination, name
 )
 
-SELECT source, destination, airlineName, maxDelays
-FROM (SELECT source, destination, MAX(name) as airlineName, MAX(numDelays) as maxDelays
+SELECT source, destination, MAX(name) as airlineName, MAX(numDelays) as maxDelays
 	FROM ROUTEDELAYS
-	GROUP BY source, destination)
-		NATURAL JOIN
-	ROUTEDELAYS
+	GROUP BY source, destination
 
 
 -- Bonus

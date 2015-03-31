@@ -21,22 +21,22 @@ public class MostDelays extends HttpServlet {
         try {
             Statement stmt = conn.createStatement();
             ResultSet rset = stmt.executeQuery(
-                        "SELECT passID, numberOfFlights " +
-                        "FROM( " +
-                            "SELECT passID, COUNT(passID) AS numberOfFlights " +
-                            "FROM BOARDS " +
-                            "GROUP BY passID " +
-                            "ORDER BY COUNT(passID) DESC) " +
-                        "WHERE ROWNUM <= 3");
+                        "SELECT source, destination, MAX(name) as airlineName, MAX(numDelays) as maxDelays " +
+                        "FROM ROUTEDELAYS " +
+                        "GROUP BY source, destination");
             out.println("<table>");
             out.println("<tr>");
-            out.println("<th>passID</th>");
-            out.println("<th>numberOfFlights</th>");
+            out.println("<th>source</th>");
+            out.println("<th>destination</th>");
+            out.println("<th>airlineName</th>");
+            out.println("<th>maxDelays</th>");
             out.println("</tr>");
             while (rset.next()) {
                 out.println("<tr>");
-                out.print ("<td>"+rset.getString("passID")+"</td>");
-                out.print ("<td>"+rset.getString("numberOfFlights")+"</td>");
+                out.print ("<td>"+rset.getString("source")+"</td>");
+                out.print ("<td>"+rset.getString("destination")+"</td>");
+                out.print ("<td>"+rset.getString("airlineName")+"</td>");
+                out.print ("<td>"+rset.getString("maxDelays")+"</td>");
                 out.println("</tr>");
             }
             out.println("</table>");
