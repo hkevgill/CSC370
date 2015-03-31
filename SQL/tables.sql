@@ -265,10 +265,9 @@ INSERT INTO CLASS(classID) VALUES (15);
 
 -- FIRSTCLASS
 INSERT INTO FIRSTCLASS(classID,dessert,mealChoice,partyFavors,numberOfPillows,winePreference) VALUES (1,"Chocolate Terrine","Kobe Tartare","8oz of Mexican black-tar heroin",13,"1938 Montrachet, 1942 Le Pan");
-INSERT INTO FIRSTCLASS(classID,dessert,mealChoice,partyFavors,numberOfPillows,winePreference) VALUES (1,"Buche De Noel","Prime Rib","Vicodin",6,"Screaming Eagle Cabernet Sauvignon");
+INSERT INTO FIRSTCLASS(classID,dessert,mealChoice,partyFavors,numberOfPillows,winePreference) VALUES (2,"Buche De Noel","Prime Rib","Vicodin",6,"Screaming Eagle Cabernet Sauvignon");
 
 -- REGULARCLASS
-INSERT INTO REGULARCLASS(classID,mealChoice) VALUES (2,"Mashed Potatoes");
 INSERT INTO REGULARCLASS(classID,mealChoice) VALUES (3,"Mashed Potatoes");
 INSERT INTO REGULARCLASS(classID,mealChoice) VALUES (4,"Mashed Potatoes");
 INSERT INTO REGULARCLASS(classID,mealChoice) VALUES (5,"Mashed Potatoes");
