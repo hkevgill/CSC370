@@ -52,8 +52,15 @@ WHERE (plannedDepartureTime - plannedArrivalTime <= 0.125) AND (plannedDeparture
 b)
 
 SELECT passID
-FROM ASSOCIATEDDEPARTURE NATURAL JOIN ASSOCIATEDARRIVAL
-WHERE (SYSDATE > departureDate) AND (SYSDATE < arrivalDate)
+FROM BOARDS 
+		NATURAL JOIN 
+	(SELECT * 
+	FROM (FLIGHTS JOIN INCOMING USING(flightID))
+	WHERE SYSDATE < plannedArrivalTime AND SYSDATE > plannedArrivalTime - duration)
+		UNION ALL
+	(SELECT *
+	FROM (FLIGHTS JOIN OUTGOING USING(flightID))
+	WHERE SYSDATE > plannedDepartureTime AND SYSDATE < plannedDepartureTime + duration)
 
 c)
 
@@ -66,14 +73,6 @@ FROM(
 WHERE ROWNUM <= 3
 
 d)
-
-SELECT *
-FROM (SELECT departureGate AS flightGate, departureDate AS flightDate, departureStatus AS flightStatus
-  FROM DEPARTURES) a
-    JOIN
-  (SELECT plannedDepartureGate AS flightGate, plannedDepartureTime AS flightDate
-  FROM OUTGOING) b
-    ON a.flightGate = b.flightGate AND a.flightDate = b.flightDate
 
 CREATE VIEW ALLFLIGHTSTATUS AS(
 	SELECT *
