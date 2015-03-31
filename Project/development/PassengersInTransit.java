@@ -22,8 +22,15 @@ public class PassengersInTransit extends HttpServlet {
             Statement stmt = conn.createStatement();
             ResultSet rset = stmt.executeQuery(
                         "SELECT passID " +
-                        "FROM ASSOCIATEDDEPARTURE NATURAL JOIN ASSOCIATEDARRIVAL " +
-                        "WHERE (SYSDATE > departureDate) AND (SYSDATE < arrivalDate)");
+                        "FROM BOARDS " +
+                                "NATURAL JOIN " +
+                            "(SELECT * " +
+                            "FROM (FLIGHTS JOIN INCOMING USING(flightID)) " +
+                            "WHERE SYSDATE < plannedArrivalTime AND SYSDATE > plannedArrivalTime - duration) " +
+                                "UNION ALL " +
+                            "(SELECT * " +
+                            "FROM (FLIGHTS JOIN OUTGOING USING(flightID)) " +
+                            "WHERE SYSDATE > plannedDepartureTime AND SYSDATE < plannedDepartureTime + duration)");
             out.println("<table>");
             out.println("<tr>");
             out.println("<th>passID</th>");

@@ -106,3 +106,63 @@ Mar 30, 2015 5:53:43 PM org.apache.catalina.core.ApplicationContext log
 INFO: SessionListener: contextDestroyed()
 Mar 30, 2015 5:53:43 PM org.apache.catalina.core.ApplicationContext log
 INFO: ContextListener: contextDestroyed()
+Mar 30, 2015 7:24:40 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Mar 30, 2015 7:24:40 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Mar 30, 2015 7:24:40 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.catalina.Registry', 'org.apache.tomcat.util.modeler.Registry@7cd62f43')
+Mar 30, 2015 7:24:40 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.catalina.MBeanServer', 'com.sun.jmx.mbeanserver.JmxMBeanServer@6d4b1c02')
+Mar 30, 2015 7:24:46 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Mar 30, 2015 7:24:46 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Mar 30, 2015 7:24:47 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Mar 30, 2015 7:24:47 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Mar 30, 2015 7:24:47 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.catalina.Registry', 'org.apache.tomcat.util.modeler.Registry@4883b407')
+Mar 30, 2015 7:24:47 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.catalina.MBeanServer', 'com.sun.jmx.mbeanserver.JmxMBeanServer@7d9d1a19')
+Mar 30, 2015 7:26:27 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Mar 30, 2015 7:26:27 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Mar 30, 2015 7:26:33 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Mar 30, 2015 7:26:33 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Mar 30, 2015 7:26:33 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.catalina.Registry', 'org.apache.tomcat.util.modeler.Registry@4883b407')
+Mar 30, 2015 7:26:33 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.catalina.MBeanServer', 'com.sun.jmx.mbeanserver.JmxMBeanServer@7d9d1a19')
+Mar 30, 2015 7:28:47 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Mar 30, 2015 7:28:47 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Mar 30, 2015 7:28:53 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Mar 30, 2015 7:28:53 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Mar 30, 2015 7:28:53 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.catalina.Registry', 'org.apache.tomcat.util.modeler.Registry@4883b407')
+Mar 30, 2015 7:28:53 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.catalina.MBeanServer', 'com.sun.jmx.mbeanserver.JmxMBeanServer@7d9d1a19')
+Mar 30, 2015 7:29:19 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Mar 30, 2015 7:29:19 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Mar 30, 2015 7:32:59 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Mar 30, 2015 7:32:59 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Mar 30, 2015 7:32:59 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.catalina.Registry', 'org.apache.tomcat.util.modeler.Registry@4883b407')
+Mar 30, 2015 7:32:59 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.catalina.MBeanServer', 'com.sun.jmx.mbeanserver.JmxMBeanServer@7d9d1a19')
+Mar 30, 2015 8:08:47 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Mar 30, 2015 8:08:47 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
