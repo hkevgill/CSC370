@@ -14,10 +14,11 @@ public class InsertFlight extends HttpServlet {
         String flightNumber = request.getParameter("flightNumber");
         String source = request.getParameter("source");
         String destination = request.getParameter("destination");
+        String duration = request.getParameter("duration");
         
         
-        String statementString = "INSERT INTO FLIGHTS(flightID, flightNumber, source, destination) " +
-                                 "VALUES( " + flightID + ",'" + flightNumber + "','" + source + "','" + destination + "')";
+        String statementString = "INSERT INTO FLIGHTS(flightID, flightNumber, source, destination, duration) " +
+                                 "VALUES( " + flightID + ",'" + flightNumber + "','" + source + "','" + destination + "','" + duration + "')";
         Connection conn = ConnectionManager.getInstance().getConnection();
         
         try {

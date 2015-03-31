@@ -14,10 +14,11 @@ public class DeleteFlight extends HttpServlet {
         String flightNumber = request.getParameter("flightNumber");
         String source = request.getParameter("source");
         String destination = request.getParameter("destination");
+        String duration = request.getParameter("duration");
         
         
         String statementString = "DELETE FROM FLIGHTS " +
-                                 "WHERE flightID = " + flightID + " AND flightNumber = '" + flightNumber + "' AND source = '" + source + "' AND destination = '" + destination + "'";
+                                 "WHERE flightID = " + flightID + " AND flightNumber = '" + flightNumber + "' AND source = '" + source + "' AND destination = '" + destination + "' AND duration = '" + duration + "'";
         Connection conn = ConnectionManager.getInstance().getConnection();
         
         try {
