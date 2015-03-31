@@ -31,7 +31,7 @@ CREATE TABLE FLIGHTS(
 	flightNumber VARCHAR(10),
 	source VARCHAR(100),
 	destination VARCHAR(100),
-	duration INT
+	duration NUMBER
 );
 
 CREATE TABLE INCOMING(
@@ -190,7 +190,7 @@ INSERT INTO AIRLINES(airlineCode,name,website) VALUES ('AFR','Air France','www.a
 -- FLIGHTS
 INSERT INTO FLIGHTS(flightID,flightNumber,source,destination, duration) VALUES (1,'AC100','Victoria','Vancouver',1/24);
 INSERT INTO FLIGHTS(flightID,flightNumber,source,destination, duration) VALUES (2,'AC200','Vancouver','Las Vegas',4/24);
-INSERT INTO FLIGHTS(flightID,flightNumber,source,destination, duration) VALUES (3,'SA100','Montreal','Vancouver',5/24),;
+INSERT INTO FLIGHTS(flightID,flightNumber,source,destination, duration) VALUES (3,'SA100','Montreal','Vancouver',5/24);
 INSERT INTO FLIGHTS(flightID,flightNumber,source,destination, duration) VALUES (4,'SA200','Vancouver','Victoria',1/24);
 INSERT INTO FLIGHTS(flightID,flightNumber,source,destination, duration) VALUES (5,'WJ100','Victoria','Vancouver',1/24);
 INSERT INTO FLIGHTS(flightID,flightNumber,source,destination, duration) VALUES (6,'WJ200','Vancouver','Portland',2/24);
